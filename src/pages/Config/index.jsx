@@ -10,7 +10,7 @@ import Divider from '../../components/ui-components/Divider';
 
 const Config = () => {
 	return (
-		<MainCard>
+		<MainCard extraStyles='max-h-screen overflow-y-scroll mr-1'>
 			<header className="w-full h-fit py-10 px-5">
 				<h1 className="text-2xl font-bold text-main-text">
 					<FormattedMessage id="config-title" />

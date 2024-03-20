@@ -13,13 +13,13 @@ const AsideMenu = ({ path }) => {
 	const { bgblur } = useConfig();
 
 	return (
-		<aside className={`flex flex-col w-1/6 h-full min-h-screen ${bgblur ? 'backdrop-blur-2xl bg-bg-200/80' : 'bg-bg-200'} px-5 gap-y-3 text-main-text border-r-2 border-main-border transition-all duration-300 ease-in-out`}>
-			<div className="w-full h-fit py-5 flex flex-row justify-start gap-x-3">
+		<aside className={`flex flex-col w-1/6 h-full min-h-screen ${bgblur ? 'backdrop-blur-2xl bg-bg-200/80' : 'bg-bg-200'} pr-2 gap-y-3 text-main-text border-r-2 border-main-border transition-all duration-300 ease-in-out group`}>
+			<div className="w-full h-fit py-5 px-5 flex flex-row justify-start gap-x-3">
 				<span className="h-4 w-4 bg-red-window rounded-full shadow-md"></span>
 				<span className="h-4 w-4 bg-yellow-window rounded-full shadow-md"></span>
 				<span className="h-4 w-4 bg-green-window rounded-full shadow-md"></span>
 			</div>
-			<section className="flex flex-col w-full h-fit gap-y-2">
+			<section className="flex flex-col w-full h-full gap-y-2 max-h-[90vh] overflow-y-scroll m-0 pl-5 pr-3 transition-all duration-300 ease-in-out">
 				<Link to="" className="flex w-full h-fit gap-x-5 items-center mb-5">
 					<div className="bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full"></div>
 					<div className="flex flex-col">
