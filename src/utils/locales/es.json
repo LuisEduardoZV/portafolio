@@ -1,0 +1,50 @@
+{
+	"menu-item-config": "Ajustes",
+	"menu-item-school": "Escolaridad",
+	"menu-item-projects": "Proyectos",
+	"menu-item-contact": "Contácto",
+	"menu-item-wifi": "Wi-Fi",
+	"menu-item-bluetooth": "Bluetooth",
+	"menu-item-netowrk": "Red",
+	"menu-item-notifications": "Notificaciones",
+	"menu-item-sound": "Sonido",
+	"menu-item-focus": "Enfoque",
+	"menu-item-screentime": "Tiempo en pantalla",
+	"menu-item-appearance": "Apariencia",
+	"menu-item-accessible": "Accesibilidad",
+	"menu-item-control": "Centro de control",
+	"menu-item-siri": "Siri y Spotlight",
+	"menu-item-privacy": "Privacidad y seguridad",
+
+	"lng-es": "Español",
+	"lng-en": "Inglés",
+	"lng-fr": "Francés",
+	"lng-pt": "Portugués",
+
+	"theme-light": "Claro",
+	"theme-dark": "Obscuro",
+	"theme-cinnamon": "Cinnamon Roll",
+	"theme-lavanda": "Lavanda",
+
+	"acc-default": "Por defecto",
+
+	"font-bold": "Negritas",
+	"font-normal": "Normal",
+
+	"config-title": "Configuración",
+	"config-aspect": "Aspecto",
+	"config-color": "Color de acento",
+	"config-font": "Tipo de letra",
+	"config-blur": "Permitir las transparencias en el sistema",
+	"config-language": "Cambiar idioma del sistema",
+
+	"wifi-info": "Se requiere de una red Wi-Fi para usar NoAirDrop, NoAirPlay, las notificaciones de olvido y la precisión de ubicación mejorada.",
+	"wifi-subtitle": "Redes",
+	"wifi-other": "Otra...",
+	"wifi-info-conect-pt1": "La red Wi-Fi",
+	"wifi-info-conect-pt2": "requiere una contraseña WPA2 para conectarse",
+	"wifi-password": "Contraseña",
+	"wifi-show": "Mostrar contraseña",
+	"wifi-cancel": "Cancelar",
+	"wifi-send": "Acceder"
+}

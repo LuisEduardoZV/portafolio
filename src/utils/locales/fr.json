@@ -1,0 +1,50 @@
+{
+	"menu-item-config": "Configuration",
+	"menu-item-school": "Scolarité",
+	"menu-item-projects": "Projets",
+	"menu-item-contact": "Contact",
+	"menu-item-wifi": "Wi-Fi",
+	"menu-item-bluetooth": "Bluetooth",
+	"menu-item-netowrk": "Web",
+	"menu-item-notifications": "Notifications",
+	"menu-item-sound": "Audio",
+	"menu-item-focus": "Mise au point",
+	"menu-item-screentime": "Temps d'affichage",
+	"menu-item-appearance": "Apparence",
+	"menu-item-accessible": "Accessibilité",
+	"menu-item-control": "Centre de contrôle",
+	"menu-item-siri": "Siri et Spotlight",
+	"menu-item-privacy": "Vie privée et sécurité",
+
+	"lng-es": "Espagnol",
+	"lng-en": "Anglais",
+	"lng-fr": "Français",
+	"lng-pt": "Portugais",
+
+	"theme-light": "Lumière",
+	"theme-dark": "Sombre",
+	"theme-cinnamon": "Cinnamon Roll",
+	"theme-lavanda": "Lavanda",
+
+	"acc-default": "Défaut",
+
+	"font-bold": "Bold",
+	"font-normal": "Normale",
+
+	"config-title": "Configuration",
+	"config-aspect": "Aspect",
+	"config-color": "Couleur d'accent",
+	"config-font": "Type de police",
+	"config-blur": "Autoriser les transparents dans le système",
+	"config-language": "Changer la langue du système",
+
+	"wifi-info": "Un réseau Wi-Fi est nécessaire pour utiliser NoAirDrop, NoAirPlay, oublier les notifications et améliorer la précision de la localisation.",
+	"wifi-subtitle": "Réseaux",
+	"wifi-other": "Autres...",
+	"wifi-info-conect-pt1": "Le réseau Wi-Fi",
+	"wifi-info-conect-pt2": "nécessite un mot de passe WPA2 pour se connecter",
+	"wifi-password": "Mot de passe",
+	"wifi-show": "Afficher le mot de passe",
+	"wifi-cancel": "Annuler",
+	"wifi-send": "Accès"
+}

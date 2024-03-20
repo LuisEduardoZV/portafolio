@@ -1,0 +1,50 @@
+{
+	"menu-item-config": "Configuration",
+	"menu-item-school": "Education",
+	"menu-item-projects": "Projects",
+	"menu-item-contact": "Contact",
+	"menu-item-wifi": "Wi-Fi",
+	"menu-item-bluetooth": "Bluetooth",
+	"menu-item-netowrk": "Network",
+	"menu-item-notifications": "Notifications",
+	"menu-item-sound": "Sound",
+	"menu-item-focus": "Focus",
+	"menu-item-screentime": "Screen Time",
+	"menu-item-appearance": "Appearance",
+	"menu-item-accessible": "Accessibility",
+	"menu-item-control": "Control Center",
+	"menu-item-siri": "Siri & Spotlight",
+	"menu-item-privacy": "Privacy & Secutity",
+
+	"lng-es": "Spanish",
+	"lng-en": "English",
+	"lng-fr": "French",
+	"lng-pt": "Portuguese",
+
+	"theme-light": "Light",
+	"theme-dark": "Dark",
+	"theme-cinnamon": "Cinnamon Roll",
+	"theme-lavanda": "Lavanda",
+
+	"acc-default": "Default",
+
+	"font-bold": "Bold",
+	"font-normal": "Normal",
+
+	"config-title": "Configuration",
+	"config-aspect": "Aspect",
+	"config-color": "Accent colour",
+	"config-font": "Font type",
+	"config-blur": "Allow transparencies in the system",
+	"config-language": "Change system language",
+
+	"wifi-info": "A Wi-Fi network is required to use NoAirDrop, NoAirPlay, forget notifications and improved location accuracy.",
+	"wifi-subtitle": "Networks",
+	"wifi-other": "Other...",
+	"wifi-info-conect-pt1": "The Wi-Fi network",
+	"wifi-info-conect-pt2": "requires a WPA2 password to connect",
+	"wifi-password": "Password",
+	"wifi-show": "Show password",
+	"wifi-cancel": "Cancel",
+	"wifi-send": "Access"
+}
