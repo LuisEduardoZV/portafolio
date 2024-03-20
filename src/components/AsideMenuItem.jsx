@@ -8,7 +8,7 @@ const AsideMenuItem = ({ Icon, color, page, title, itsSiri = false, itsControl =
 
 	if (itsSiri) {
 		return (
-			<Link to="#" className={`flex gap-x-5 rounded-lg px-2 py-1 ${active ? 'bg-acc-main text-white shadow-md' : 'hover:bg-bg-200 hover:shadow'}`}>
+			<Link to="#" className={`flex gap-x-5 rounded-lg px-2 py-1 ${active ? 'bg-acc-main text-white shadow-md' : 'hover:bg-bg-200 hover:shadow'} transition-colors duration-300 ease-in-out`}>
 				<span className="h-8 w-8 rounded-md flex items-center justify-center p-0 m-0 -ml-0.5 bg-cover bg-no-repeat bg-top" style={{ backgroundImage: `url('${Icon}')` }}></span>
 				<label className={`cursor-pointer ${font ? 'font-normal' : 'font-bold'}`}>
 					<FormattedMessage id="menu-item-siri" />
@@ -17,7 +17,7 @@ const AsideMenuItem = ({ Icon, color, page, title, itsSiri = false, itsControl =
 		);
 	} else if (itsControl) {
 		return (
-			<Link to="#" className={`flex gap-x-5 rounded-lg px-2 py-1 ${active ? 'bg-acc-main text-white shadow-md' : 'hover:bg-bg-200 hover:shadow'}`}>
+			<Link to="#" className={`flex gap-x-5 rounded-lg px-2 py-1 ${active ? 'bg-acc-main text-white shadow-md' : 'hover:bg-bg-200 hover:shadow'} transition-colors duration-300 ease-in-out`}>
 				<span className="h-7 w-7 bg-gradient-to-t from-gray-icon-full to-gray-icon-low rounded-md flex items-center justify-center shadow">
 					<span className="h-6 w-6" style={{ backgroundImage: `url('${Icon}')`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }} />
 				</span>
@@ -28,7 +28,7 @@ const AsideMenuItem = ({ Icon, color, page, title, itsSiri = false, itsControl =
 		);
 	} else {
 		return (
-			<Link to={page} className={`flex gap-x-5 rounded-lg px-2 py-1 ${active ? 'bg-acc-main text-white shadow-md' : 'hover:bg-bg-200 hover:shadow'}`}>
+			<Link to={page} className={`flex gap-x-5 rounded-lg px-2 py-1 ${active ? 'bg-acc-main text-white shadow-md duration-300 ease-in-out' : 'hover:bg-bg-200 hover:shadow duration-100 ease-linear'} transition-colors`}>
 				<span className={`h-7 w-7 ${color} rounded-md flex items-center justify-center shadow`}>
 					<Icon className="h-6 w-6 text-white" />
 				</span>
