@@ -51,6 +51,10 @@ export default {
 				wireless: "url('/src/assets/icons/wireless.png')",
 				keyboard: "url('/src/assets/icons/keyboard.svg')",
 				controller: "url('/src/assets/icons/controller.svg')",
+				loginBlack: "url('/src/assets/projects/LoginBlack.png')",
+				loginDefault: "url('/src/assets/projects/LoginDefault.png')",
+				mainBlack: "url('/src/assets/projects/MainBlack.png')",
+				mainDefault: "url('/src/assets/projects/MainDefault.png')",
 			},
 			boxShadow: {
 				'input-radio': 'inset 0 0 0 0.3375em',
@@ -60,6 +64,11 @@ export default {
 				loader: {
 					'100%': { transform: 'rotate(1turn)' },
 				},
+				formingImages: {
+					'40%, 60%': {
+						'clip-path': 'polygon(0 90%, 100% 10%, 100% 100%, 0 100%)'
+					}
+				}
 			},
 			animation: {
 				loader: 'loader 1s infinite steps(12)',

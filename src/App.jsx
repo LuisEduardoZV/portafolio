@@ -17,7 +17,7 @@ const App = () => {
 	return (
 		<main className={`${theme} ${accent} min-h-screen max-h-screen flex flex-row bg-main-fondo bg-cover bg-center bg-no-repeat cursor-default overflow-hidden transition-all duration-300 ease-in-out`}>
 			<AsideMenu path={path} />
-			<section className="flex w-5/6 h-full min-h-screen bg-bg-100 transition-all duration-300 ease-in-out">
+			<section className="flex w-[82%] h-full min-h-screen bg-bg-100 transition-all duration-300 ease-in-out">
 				<Outlet />
 			</section>
 		</main>

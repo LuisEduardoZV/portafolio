@@ -23,6 +23,7 @@ body {
 	background-repeat: no-repeat;
 	animation: s3 1s infinite steps(12);
 }
+
 .custom-loader::before,
 .custom-loader::after {
 	content: '';
@@ -32,15 +33,10 @@ body {
 	opacity: 0.915;
 	transform: rotate(30deg);
 }
+
 .custom-loader::after {
 	opacity: 0.83;
 	transform: rotate(60deg);
-}
-
-@keyframes s3 {
-	100% {
-		transform: rotate(1turn);
-	}
 }
 
 /*Custom Scroll Bar */
@@ -70,4 +66,30 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #939393;
+}
+
+.form {
+	clip-path: polygon(0 0, 100% 0, 100% 10%, 0 90%);
+	animation-name: formingImages;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+@keyframes s3 {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+@keyframes formingImages {
+	0%,
+	10% {
+		clip-path: polygon(0 0, 100% 0, 100% 10%, 0 90%);
+	}
+	40%,
+	60% {
+		clip-path: polygon(0 90%, 100% 10%, 100% 100%, 0 100%);
+	}
 }
