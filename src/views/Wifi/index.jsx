@@ -9,85 +9,91 @@ import InputSwitch from '../../components/ui-components/InputSwitch';
 //assets
 import { IconCheck, IconInfoCircle, IconLock, IconWifi, IconWifi0, IconWifi1, IconWifi2 } from '@tabler/icons-react';
 
-const NETOWRKS_PREFIX = ['INFINITUM', 'IZZI-'];
+// functions
+import { not } from '../../utils/extraFunctions';
+
+const NETOWRKS_PREFIX = ['INFINITUM', 'IZZI-']
 
 const Wifi = () => {
-	const [active, setActive] = useState(false);
-	const [items, setItems] = useState([]);
+	const [active, setActive] = useState(false)
+	const [items, setItems] = useState([])
 
-	const [actualNet, setActualNet] = useState({});
-	const [netSelected, setNetSelected] = useState(null);
-	const [pass, setPass] = useState('');
-	const [showPas, setShowPass] = useState(false);
+	const [actualNet, setActualNet] = useState({})
+	const [netSelected, setNetSelected] = useState(null)
+	const [pass, setPass] = useState('')
+	const [showPas, setShowPass] = useState(false)
 
-	const [timerLoaderPass, setTimerLoaderPass] = useState(false);
+	const [timerLoaderPass, setTimerLoaderPass] = useState(false)
 
-	const [modal, setModal] = useState(false);
-	const [error, setError] = useState(false);
+	const [modal, setModal] = useState(false)
+	const [error, setError] = useState(false)
 
 	const handleActive = () => {
-		setActive((current) => !current);
+		setActive((current) => !current)
 	};
 
 	const handleModal = (data) => {
 		if (data.open) {
-			setTimerLoaderPass(true);
-			setModal(false);
-			setNetSelected(null);
-			setActualNet(data);
+			setTimerLoaderPass(true)
+			setModal(false)
+			setNetSelected(null)
+			setActualNet(data)
 		} else {
-			setModal((current) => !current);
-			setNetSelected(data);
+			setModal((current) => !current)
+			setNetSelected(data)
 		}
-	};
+	}
 
 	const handlePass = (e) => {
-		setPass(e.target.value);
-	};
+		setPass(e.target.value)
+	}
 
 	const handleShowPass = () => {
-		setShowPass((current) => !current);
-	};
+		setShowPass((current) => !current)
+	}
 
 	const handleCheckPassword = (e) => {
-		e.preventDefault();
-		if (pass?.trim() === '' || pass === undefined) {
-			setError(true);
-		} else {
-			setTimerLoaderPass(true);
-			setModal(false);
-			setActualNet(netSelected);
-			setNetSelected(null);
-			setPass('');
-			setShowPass(false);
+		e.preventDefault()
+		if (pass?.trim() === '' || pass === undefined) setError(true)
+		else {
+			setTimerLoaderPass(true)
+			setModal(false)
+			setActualNet(netSelected)
+			setNetSelected(null)
+			setPass('')
+			setShowPass(false)
 		}
-	};
+	}
 
 	const networksAvailable = () => {
-		var available = [...Array(10).keys()].map(() => {
-			var obj = {};
-			const random = Math.floor(Math.random() * 90000) + 10000;
-			obj.name = NETOWRKS_PREFIX[Math.floor(Math.random() * NETOWRKS_PREFIX.length)] + random;
-			obj.open = random > 50000 ? true : false;
-			obj.intensity = random < 15000 ? 1 : random < 30000 ? 3 : random < 60000 ? 0 : 1;
-			return obj;
+		var available = [...Array(10).keys()].map((el, index) => {
+			var obj = {}
+			const random = Math.floor(Math.random() * 90000) + 10000
+			obj.id = index - 1
+			obj.name = NETOWRKS_PREFIX[Math.floor(Math.random() * NETOWRKS_PREFIX.length)] + random
+			obj.open = random > 50000 ? true : false
+			obj.intensity = random < 15000 ? 1 : random < 30000 ? 3 : random < 60000 ? 0 : 1
+			return obj
 		});
-		available = available.sort((a, b) => b.intensity - a.intensity);
-		setItems(available);
+		available = available.sort((a, b) => b.intensity - a.intensity)
+		setItems(available)
 	};
 
 	useEffect(() => {
-		networksAvailable();
-	}, []);
+		networksAvailable()
+	}, [])
 
 	useEffect(() => {
-		var id;
-		if (actualNet?.name) {
-			console.log('entra');
-			id = setTimeout(() => setTimerLoaderPass(false), 2000);
+		var id
+		if (actualNet.name) {
+			id = setTimeout(() => setTimerLoaderPass(false), 2000)
 		}
-		return () => clearTimeout(id);
-	}, [actualNet]);
+		if (actualNet.id) {
+			// con anterior ya
+		} else setItems(not(items, actualNet?.id, 'id'))
+		return () => clearTimeout(id)
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [actualNet])
 
 	return (
 		<>
