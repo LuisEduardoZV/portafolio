@@ -69,28 +69,18 @@ body {
 	background: #939393;
 }
 
-.form {
-	clip-path: polygon(0 0, 100% 0, 100% 10%, 0 90%);
-	animation-name: formingImages;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-}
-
 @keyframes s3 {
 	100% {
 		transform: rotate(1turn);
 	}
 }
 
-@keyframes formingImages {
-	0%,
-	10% {
+@layer utilities {
+	.clip-bg-images-projects {
 		clip-path: polygon(0 0, 100% 0, 100% 10%, 0 90%);
 	}
-	40%,
-	60% {
-		clip-path: polygon(0 90%, 100% 10%, 100% 100%, 0 100%);
+
+	.clip-bg-images-projects-alter {
+		clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
 	}
 }
