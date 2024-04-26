@@ -1,16 +1,19 @@
 import PropTypes from 'prop-types'
+import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import useConfig from '../hooks/useConfig'
 
 // import project
 import AsideMenuItem from './AsideMenuItem'
-import Divider from './ui-components/Divider'
+import { HoverEffect } from './extends/CarHoverEffect'
 
 // assets
 import { mainMenuItems, menuItemsSec1, menuItemsSec2, menuItemsSec3 } from '../utils/menuItems'
 
 const AsideMenu = ({ path }) => {
   const { bgblur } = useConfig()
+
+  const menuItems = useMemo(() => ([...mainMenuItems, ...menuItemsSec1, ...menuItemsSec2, ...menuItemsSec3]), [])
 
   return (
     <aside className={`flex flex-col w-[18%] h-full min-h-screen ${bgblur ? 'backdrop-blur-2xl bg-bg-200/60' : 'bg-bg-200'} pr-2 gap-y-3 text-main-text border-r-2 border-main-border group`}>
@@ -27,28 +30,15 @@ const AsideMenu = ({ path }) => {
             <span>Front End Developer</span>
           </div>
         </Link>
-        {/* MAIN SECTION */}
-        {mainMenuItems.map((data, index) => {
-          return <AsideMenuItem {...data} active={path === data.page && true} key={index} />
-        })}
-        <Divider />
-        <section className='flex flex-col w-full h-fit gap-y-5'>
-          <div className='flex flex-col w-full h-fit'>
-            {menuItemsSec1.map((data, index) => {
-              return <AsideMenuItem {...data} active={path === data.page && true} key={index} />
+        <div className='flex flex-col w-full h-full'>
+          <HoverEffect hoverClasses='start-0 w-full' containerClasses='p-0 py-0.5 px-0' actualPath={path} inMenu>
+            {/* MAIN SECTION */}
+            {menuItems.map((data, index) => {
+              const selected = path === data.page && true
+              return <AsideMenuItem {...data} active={selected} key={index} />
             })}
-          </div>
-          <div className='flex flex-col w-full h-fit'>
-            {menuItemsSec2.map((data, index) => {
-              return <AsideMenuItem {...data} active={path === data.page && true} key={index} />
-            })}
-          </div>
-          <div className='flex flex-col w-full h-fit'>
-            {menuItemsSec3.map((data, index) => {
-              return <AsideMenuItem {...data} active={path === data.page && true} key={index} />
-            })}
-          </div>
-        </section>
+          </HoverEffect>
+        </div>
       </section>
     </aside>
   )

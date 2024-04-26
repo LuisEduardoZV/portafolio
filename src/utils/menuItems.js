@@ -3,8 +3,8 @@ import IconControl from '../assets/icons/Control.svg'
 import IconSiri from '../assets/icons/Siri.png'
 
 const mainMenuItems = [
-  { Icon: IconSettings, color: 'bg-gradient-to-t from-gray-icon-full to-gray-icon-low', page: 'config', title: 'menu-item-config' },
-  { Icon: IconBrowser, color: 'bg-gradient-to-t from-blue-icon-full to-blue-icon-low', page: 'projects', title: 'menu-item-projects' }
+  { Icon: IconBrowser, color: 'bg-gradient-to-t from-blue-icon-full to-blue-icon-low', page: 'projects', title: 'menu-item-projects' },
+  { Icon: IconSettings, color: 'bg-gradient-to-t from-gray-icon-full to-gray-icon-low', page: 'config', title: 'menu-item-config' }
 ]
 
 const menuItemsSec1 = [

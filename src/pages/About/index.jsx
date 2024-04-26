@@ -80,7 +80,7 @@ const About = () => {
                 <motion.span className='bg-bg-100 py-2 px-4 rounded-sm shadow-2xl text-main-text-low' whileHover={{ scale: 1.1, boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>Creativo</motion.span>
                 <motion.span className='bg-bg-100 py-2 px-4 rounded-sm shadow-2xl text-main-text-low' whileHover={{ scale: 1.1, boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>Inglés intermedio</motion.span>
                 <motion.span className='bg-bg-100 py-2 px-4 rounded-sm shadow-2xl text-main-text-low' whileHover={{ scale: 1.1, boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>Autónomo</motion.span>
-                <motion.span className='bg-bg-100 py-2 px-4 rounded-sm shadow-2xl text-main-text-low w-auto' whileHover={{ scale: 1.1, boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>Autónomo</motion.span>
+                <motion.span className='bg-bg-100 py-2 px-4 rounded-sm shadow-2xl text-main-text-low w-auto' whileHover={{ scale: 1.1, boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>Proactivo</motion.span>
               </div>
             </div>
           </div>
