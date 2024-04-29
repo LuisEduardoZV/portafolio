@@ -10,10 +10,10 @@ const Menu = memo(({ path, menuItems }) => {
   return (
     <section className='flex flex-col w-full h-full gap-y-2 max-h-[90vh] overflow-y-auto m-0 pl-5 pr-3 sm:pr-6'>
       <Link to='' className='flex w-full h-fit gap-x-5 items-center mb-5'>
-        <div className='bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full' />
+        <div className='bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full lg:h-14 lg:w-14' />
         <div className='flex flex-col'>
           <label className='font-bold'>Luis E. Zúñiga V.</label>
-          <span>Front End Developer</span>
+          <span className='lg:text-sm'>Front End Developer</span>
         </div>
       </Link>
       <div className='flex flex-col w-full h-full bg-transparent'>

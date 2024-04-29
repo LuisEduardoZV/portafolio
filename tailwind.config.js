@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { themes, defaultTheme } from './src/utils/colorsConstants'
+import { defaultTheme, themes } from './src/utils/colorsConstants'
 
 export default {
   darkMode: ['class', '[data-mode="dark"]'],
@@ -67,7 +67,12 @@ export default {
       },
       boxShadow: {
         'input-radio': 'inset 0 0 0 0.3375em',
-        'input-radio-before': 'inset 0 0 0 0.125em'
+        'input-radio-before': 'inset 0 0 0 0.125em',
+        'main-card': `3.4px 3.4px 2.7px rgba(0, 0, 0, 0.012),
+        8.7px 8.7px 6.9px rgba(0, 0, 0, 0.018),
+        17.7px 17.7px 14.2px rgba(0, 0, 0, 0.022),
+        36.5px 36.5px 29.2px rgba(0, 0, 0, 0.028),
+        100px 100px 80px rgba(0, 0, 0, 0.04)`
       },
       keyframes: {
         loader: {

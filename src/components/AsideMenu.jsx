@@ -13,7 +13,7 @@ const AsideMenu = ({ path }) => {
   const menuItems = useMemo(() => ([...mainMenuItems, ...menuItemsSec1, ...menuItemsSec2, ...menuItemsSec3]), [])
 
   return (
-    <aside className={`flex flex-col w-[18%] h-full min-h-screen ${bgblur ? 'backdrop-blur-2xl bg-bg-200/60' : 'bg-bg-200'} pr-2 gap-y-3 text-main-text border-r-2 border-main-border group hidden md:flex`}>
+    <aside className={`flex flex-col w-[18%] h-full min-h-screen ${bgblur ? 'backdrop-blur-2xl bg-bg-200/60' : 'bg-bg-200'} pr-2 gap-y-3 text-main-text border-r-2 border-main-border group hidden lg:flex lg:w-1/4 xl:w-1/6`}>
       <div className='w-full h-fit py-5 px-5 flex flex-row justify-start gap-x-3'>
         <span className='h-4 w-4 bg-red-window rounded-full shadow-md' />
         <span className='h-4 w-4 bg-yellow-window rounded-full shadow-md' />

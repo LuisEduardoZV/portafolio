@@ -66,7 +66,7 @@ const Bluetooth = () => {
             </div>
             <div className='flex w-full flex-col'>
               <FormattedMessage id='menu-item-bluetooth' />
-              <label className='text-sm text-acc-main sm:text-xs'>{active ? 'Ahora visible como "MocBaack NoAir".' : 'Localización, NoAirDrop y No AirPlay usan Bluetlooth'}</label>
+              <label className='text-sm text-acc-main sm:text-xs lg:text-base'>{active ? 'Ahora visible como "MocBaack NoAir".' : 'Localización, NoAirDrop y No AirPlay usan Bluetlooth'}</label>
             </div>
             <div className='flex w-fit'>
               <InputSwitch handleListItemClick={handleActive} />

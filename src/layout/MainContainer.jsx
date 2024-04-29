@@ -21,8 +21,8 @@ const MainContainer = () => {
     <main className={`${theme} ${accent} min-h-screen max-h-screen flex flex-row bg-main-fondo bg-cover bg-center bg-no-repeat cursor-default overflow-hidden transition-all duration-300 ease-in-out`}>
       <AsideMenu path={path} />
       <AsideMenuMovil setOpen={setActMenu} open={actMenu} path={path} />
-      <section className='flex w-[82%] h-full min-h-screen bg-bg-100 transition-all duration-300 ease-in-out sm:w-full md:w-[82%] relative'>
-        <div className='hidden absolute bg-bg-200 p-1 rounded start-5 top-10 hover:cursor-pointer sm:flex md:hidden' onClick={() => { setActMenu(true) }}>
+      <section className='flex w-[82%] h-full min-h-screen bg-bg-100 transition-all duration-300 ease-in-out sm:w-full relative lg:w-3/4 xl:w-5/6'>
+        <div className='hidden absolute bg-bg-200 p-1 rounded start-5 top-10 hover:cursor-pointer sm:flex lg:hidden' onClick={() => { setActMenu(true) }}>
           <IconMenu className='text-main-text-low' size={22} />
         </div>
         <Outlet />

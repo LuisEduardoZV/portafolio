@@ -9,16 +9,16 @@ import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <MainCard extraStyles='flex-row gap-5 h-full'>
+    <MainCard extraStyles='flex-row gap-5 h-full lg:flex-row lg:gap-5 lg:items-start'>
 
-      <article className='max-w-full w-1/2 h-full flex-1 sm:w-10/12'>
-        <header className='w-full h-fit pt-10 pb-5 px-5 sm:px-0'>
+      <article className='max-w-full w-1/2 h-full flex-1 sm:w-10/12 lg:w-1/2'>
+        <header className='w-full h-fit pt-10 pb-5 px-5 sm:px-0 lg:px-5'>
           <h1 className='text-2xl font-bold text-main-text flex items-center gap-2'>
             <IconUserScan size={28} />
             Acerca de mi
           </h1>
         </header>
-        <MainContentCard transitionDuration='duration-300' transitionFunction='ease-in-out' p={0} px='px-6' py='py-8' gap='gap-3'>
+        <MainContentCard className='duration-300 ease-in-out p-0 px-6 py-8 gap-3'>
           <div className='w-full flex flex-col justify-between gap-4'>
             <h2 className='text-lg font-bold flex items-center gap-1'>
               Hola!
@@ -58,14 +58,14 @@ const About = () => {
         </MainContentCard>
       </article>
 
-      <article className='max-w-full w-1/2 h-full flex-1 sm:w-10/12 sm:mb-10'>
-        <header className='w-full h-fit pt-10 pb-5 px-5 sm:px-0'>
+      <article className='max-w-full w-1/2 h-full flex-1 sm:w-10/12 sm:mb-10 lg:mb-0 lg:w-1/2'>
+        <header className='w-full h-fit pt-10 pb-5 px-5 sm:px-0 lg:px-5'>
           <h1 className='text-2xl font-bold text-main-text flex items-center gap-2'>
             <IconCertificate size={28} />
             Experiencia
           </h1>
         </header>
-        <MainContentCard transitionDuration='duration-300' transitionFunction='ease-in-out' p={0} px='px-6' py='py-8' gap='gap-3'>
+        <MainContentCard className='duration-300 ease-in-out p-0 px-6 py-8 gap-3'>
           <div className='flex flex-col gap-3'>
             <Timeline />
           </div>
