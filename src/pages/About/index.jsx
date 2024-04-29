@@ -11,8 +11,8 @@ const About = () => {
   return (
     <MainCard extraStyles='flex-row gap-5 h-full'>
 
-      <article className='max-w-full w-1/2 h-full flex-1'>
-        <header className='w-full h-fit pt-10 pb-5 px-5'>
+      <article className='max-w-full w-1/2 h-full flex-1 sm:w-10/12'>
+        <header className='w-full h-fit pt-10 pb-5 px-5 sm:px-0'>
           <h1 className='text-2xl font-bold text-main-text flex items-center gap-2'>
             <IconUserScan size={28} />
             Acerca de mi
@@ -58,8 +58,8 @@ const About = () => {
         </MainContentCard>
       </article>
 
-      <article className='max-w-full w-1/2 h-full flex-1'>
-        <header className='w-full h-fit pt-10 pb-5 px-5'>
+      <article className='max-w-full w-1/2 h-full flex-1 sm:w-10/12 sm:mb-10'>
+        <header className='w-full h-fit pt-10 pb-5 px-5 sm:px-0'>
           <h1 className='text-2xl font-bold text-main-text flex items-center gap-2'>
             <IconCertificate size={28} />
             Experiencia

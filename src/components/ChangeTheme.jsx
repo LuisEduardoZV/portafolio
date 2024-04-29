@@ -20,7 +20,7 @@ const ChangeTheme = () => {
   }, [theme])
 
   return (
-    <div className='flex w-fit h-fit'>
+    <div className='flex w-fit h-fit sm:flex-wrap sm:justify-around'>
       <div className='flex flex-col p-3 justify-center items-center gap-y-2'>
         <PrevThemeView handleListItemClick={handleListItemClick} theme={theme} thisViewIs='default' blur={bgblur} />
         <label>

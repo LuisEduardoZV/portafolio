@@ -57,7 +57,7 @@ const Bluetooth = () => {
             <FormattedMessage id='menu-item-bluetooth' />
           </h1>
         </header>
-        <MainContentCard p='p-5'>
+        <MainContentCard className='p-5 sm:w-11/12'>
           <section className='flex w-full h-fit gap-x-5 items-center'>
             <div className='w-fit'>
               <span className='h-10 w-10 bg-acc-main rounded-md flex items-center justify-center shadow-xl'>
@@ -66,17 +66,17 @@ const Bluetooth = () => {
             </div>
             <div className='flex w-full flex-col'>
               <FormattedMessage id='menu-item-bluetooth' />
-              <label className='text-sm text-acc-main-low'>{active ? 'Ahora visible como "MocBaack NoAir".' : 'Localización, NoAirDrop y No AirPlay usan Bluetlooth'}</label>
+              <label className='text-sm text-acc-main sm:text-xs'>{active ? 'Ahora visible como "MocBaack NoAir".' : 'Localización, NoAirDrop y No AirPlay usan Bluetlooth'}</label>
             </div>
             <div className='flex w-fit'>
               <InputSwitch handleListItemClick={handleActive} />
             </div>
           </section>
         </MainContentCard>
-        <div className={`flex w-full h-full mt-8 items-center gap-x-2 ${!active ? 'opacity-0' : 'opacity-100'} transition-opacity duration-0`}>
+        <div className={`flex w-full h-full mt-8 items-center gap-x-2 ${!active ? 'opacity-0' : 'opacity-100'} transition-opacity duration-0  sm:w-11/12`}>
           <label className='text-main-text pl-1 font-semibold'>Mis dispositivos</label>
         </div>
-        <MainContentCard p='p-5' opacity={active ? 'opacity-100' : 'opacity-0'} duration='duration-0'>
+        <MainContentCard className={`p-5 duration-0 ${active ? 'opacity-100' : 'opacity-0'} sm:w-11/12`}>
           <section className='flex w-full h-fit items-center gap-x-5 relative'>
             <IconInfoCircle className={`h-6 w-6 text-main-text-low justify-end items-start absolute -top-2 -right-1 cursor-pointer hover:text-acc-main transition-colors duration-150 ease ${!active ? 'opacity-0 invisible' : 'opacity-100 visible'} transition-visible duration-75 ease-linear delay-500`} />
             <div className={`h-full w-auto ${!active ? 'opacity-0 invisible' : 'opacity-100 visible'} transition-visible duration-75 ease-linear delay-500`}>
@@ -89,11 +89,11 @@ const Bluetooth = () => {
             </div>
           </section>
         </MainContentCard>
-        <div className={`flex w-full h-full mt-8 items-center gap-x-2 ${!active ? 'opacity-0' : 'opacity-100'} transition-opacity duration-0`}>
+        <div className={`flex w-full h-full mt-8 items-center gap-x-2 ${!active ? 'opacity-0' : 'opacity-100'} transition-opacity duration-0  sm:w-11/12`}>
           <label className='text-main-text pl-1 font-semibold'>Dispositivos cercanos</label>
           <div className={`custom-loader ${active && 'opacity-0 delay-700 invisible'} visible transition-visible duration-100 ease-linear`} />
         </div>
-        <MainContentCard p='p-5' opacity={active ? 'opacity-100' : 'opacity-0'} duration='duration-0' position='relative' gapy='gap-y-10'>
+        <MainContentCard className={`p-5 duration-0 relative gap-y-10 ${active ? 'opacity-100' : 'opacity-0'} sm:w-11/12`}>
           <label className={`${active ? 'opacity-0 absolute invisible' : 'opacity-100 relative visible'} transition-visible duration-100 ease-linear delay-[1200ms] top-10 left-1/2 -translate-x-1/2 -translate-y-1/2`}>Buscando...</label>
           {devicesData.map((data) => (
             <section key={data.id} className={`flex w-full h-fit items-center gap-x-5 relative ${!active ? 'opacity-0 invisible' : 'opacity-100 visible'} transition-visible duration-75 ease-linear delay-[1200ms]`}>

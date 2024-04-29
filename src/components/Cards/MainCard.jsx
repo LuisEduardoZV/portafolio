@@ -5,7 +5,7 @@ import { mergeClasses } from '../../utils/mergeClasses'
 const MainCard = ({ children, extraStyles }) => {
   return (
     <section
-      className={mergeClasses('w-full h-full flex flex-col px-10 min-h-screen max-h-screen overflow-y-scroll mr-1 transition-all duration-300 ease-in-out', extraStyles)}
+      className={mergeClasses('w-full h-full flex flex-col px-10 min-h-screen max-h-screen overflow-y-scroll mr-1 transition-all duration-300 ease-in-out sm:flex-col sm:items-center sm:gap-0', extraStyles)}
     >
       {children}
     </section>

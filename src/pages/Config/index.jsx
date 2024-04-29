@@ -10,13 +10,13 @@ import Divider from '../../components/ui-components/Divider'
 
 const Config = () => {
   return (
-    <MainCard extraStyles='max-h-screen overflow-y-scroll mr-1'>
+    <MainCard extraStyles='min-h-screen overflow-y-auto mr-1'>
       <header className='w-full h-fit py-10 px-5'>
         <h1 className='text-2xl font-bold text-main-text'>
           <FormattedMessage id='config-title' />
         </h1>
       </header>
-      <MainContentCard transitionDuration='duration-300' transitionFunction='ease-in-out'>
+      <MainContentCard className='duration-300 ease-in-out sm:w-11/12'>
         <div className='w-full flex justify-between px-2 py-5'>
           <h2>
             <FormattedMessage id='config-aspect' />
@@ -45,7 +45,7 @@ const Config = () => {
           <ChangeAsideBlur />
         </div>
       </MainContentCard>
-      <MainContentCard transitionDuration='duration-300' transitionFunction='ease-in-out'>
+      <MainContentCard className='duration-300 ease-in-out sm:w-11/12'>
         <div className='w-full flex-col justify-between px-2 py-5'>
           <h2 className='mb-5'>
             <FormattedMessage id='config-language' />

@@ -104,7 +104,7 @@ const Wifi = () => {
             <FormattedMessage id='menu-item-wifi' />
           </h1>
         </header>
-        <MainContentCard>
+        <MainContentCard className='w-11/12'>
           <section className='grid grid-cols-12 w-full h-fit justify-items-stretch content-center place-content-center'>
             <label className='flex justify-self-end items-center w-full' />
             <label className={`flex w-full col-span-9 items-center ${active && actualNet.name && 'border-b border-b-gray-300'}`}>
@@ -135,8 +135,7 @@ const Wifi = () => {
           </label>
           <div className={`custom-loader ${active && 'opacity-0 delay-700'} transition-opacity duration-100 ease-linear`} />
         </div>
-        <MainContentCard opacity={`${active ? 'opacity-100' : 'opacity-0'}`} delay={`${active && 'delay-700'}`} hight={`${active ? 'h-fit' : 'h-0'}`} z={`${active ? 'z-0' : '-z-10'}`}>
-          {console.log(items)}
+        <MainContentCard className={`${active ? 'opacity-100' : 'opacity-0'} ${active && 'delay-700'} ${active ? 'h-fit' : 'h-0'} ${active ? 'z-0' : '-z-10'} sm:w-11/12`}>
           {items.map((data, index) => {
             return (
               <section
@@ -167,7 +166,7 @@ const Wifi = () => {
           </section>
         </MainContentCard>
       </MainCard>
-      <article className={`flex flex-col items-center justify-center w-5/6 h-full m-0 ${modal ? 'z-10 opacity-100' : '-z-10 opacity-0'} absolute bg-black/10 backdrop-blur-[1px] transition-all duration-200 ease-linear delay-100`}>
+      <article className={`flex flex-col items-center justify-center w-5/6 h-full m-0 ${modal ? 'z-10 opacity-100' : '-z-10 opacity-0'} absolute bg-black/10 backdrop-blur-[1px] transition-all duration-200 ease-linear delay-100 sm:w-full`}>
         <section className='bg-bg-200 shadow p-3 rounded-lg max-w-lg w-full h-fit relative'>
           <form onSubmit={handleCheckPassword} className='w-full flex flex-col h-fit'>
             <div className='w-full flex items-center gap-x-3'>

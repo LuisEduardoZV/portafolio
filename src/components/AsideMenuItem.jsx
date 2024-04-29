@@ -8,7 +8,7 @@ import { mergeClasses } from '../utils/mergeClasses'
 const AsideMenuItem = ({ Icon, color, page, title, itsSiri = false, itsControl = false, active = false, itemClass }) => {
   const { font } = useConfig()
 
-  const defClasses = useMemo(() => `flex gap-x-5 rounded-lg px-2 py-1 transition-colors duration-300 ease-in-out relative z-50 ${active && 'text-white bg-acc-main hover:bg-acc-main shadow-md'}`, [active])
+  const defClasses = useMemo(() => `flex gap-x-5 rounded-lg px-2 py-1 transition-colors duration-300 ease-in-out relative z-50 ${active && 'text-white bg-acc-main shadow-md'}`, [active])
 
   if (itsSiri) {
     return (
