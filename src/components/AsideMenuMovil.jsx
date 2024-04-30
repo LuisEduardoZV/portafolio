@@ -1,80 +1,137 @@
-import { Dialog, Transition } from '@headlessui/react'
-import { IconX } from '@tabler/icons-react'
+import { IconChevronRight } from '@tabler/icons-react'
 import PropTypes from 'prop-types'
-import { Fragment, useMemo } from 'react'
+import { Fragment } from 'react'
+import { FormattedMessage } from 'react-intl'
+import { Link } from 'react-router-dom'
+import { mergeClasses } from '../utils/mergeClasses'
 
 // assets
-import useConfig from '../hooks/useConfig'
+import Divider from '../components/ui-components/Divider'
 import { mainMenuItems, menuItemsSec1, menuItemsSec2, menuItemsSec3 } from '../utils/menuItems'
-import { Menu } from './Menu'
+import MainContentCard from './Cards/MainContentCard'
 
 export default function AsideMenuMovil ({ setOpen, open, path }) {
-  const { bgblur } = useConfig()
-
-  const menuItems = useMemo(() => ([...mainMenuItems, ...menuItemsSec1, ...menuItemsSec2, ...menuItemsSec3]), [])
-
   return (
-    <Transition.Root show={open} as={Fragment}>
-      <Dialog as='div' className='relative z-50' onClose={setOpen}>
-        <Transition.Child
-          as={Fragment}
-          enter='ease-in-out duration-500'
-          enterFrom='opacity-0'
-          enterTo='opacity-100'
-          leave='ease-in-out duration-500'
-          leaveFrom='opacity-100'
-          leaveTo='opacity-0'
-        >
-          <div className='fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity' />
-        </Transition.Child>
-
-        <div className='fixed inset-0 overflow-hidden'>
-          <div className='absolute inset-0 overflow-hidden'>
-            <div className='pointer-events-none fixed inset-y-0 left-0 flex max-w-full'>
-              <Transition.Child
-                as={Fragment}
-                enter='transform transition ease-in-out duration-500 sm:duration-500'
-                enterFrom='-translate-x-full'
-                enterTo='translate-x-0'
-                leave='transform transition ease-in-out duration-500 sm:duration-500'
-                leaveFrom='translate-x-0'
-                leaveTo='-translate-x-full'
-              >
-                <Dialog.Panel className='pointer-events-auto relative w-screen max-w-[20rem] z-50'>
-                  <Transition.Child
-                    as={Fragment}
-                    enter='ease-in-out duration-500'
-                    enterFrom='opacity-0'
-                    enterTo='opacity-100'
-                    leave='ease-in-out duration-500'
-                    leaveFrom='opacity-100'
-                    leaveTo='opacity-0'
-                  >
-                    <div className='absolute right-0 top-0 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4 z-20'>
-                      <button
-                        type='button'
-                        className='relative rounded-md text-gray-300 hover:text-gray-400'
-                        onClick={() => setOpen(false)}
-                      >
-                        <span className='absolute -inset-2.5' />
-                        <span className='sr-only'>Close panel</span>
-                        <IconX className='h-6 w-6' aria-hidden='true' />
-                      </button>
-                    </div>
-                  </Transition.Child>
-
-                  <div className={`absolute left-0 right-0 top-0 bottom-0 flex h-full flex-col py-0 shadow-xl ${bgblur ? 'bg-main-fondo' : 'bg-bg-200'} bg-cover bg-center bg-no-repeat z-0`}>
-                    <div className={`pt-6 pr-6 w-full min-h-screen ${bgblur ? 'backdrop-blur-2xl bg-bg-200/60' : 'bg-bg-200'} backdrop-blur-2xl z-10 absolute left-0 right-0 top-0 bottom-0`}>
-                      <Menu path={path} menuItems={menuItems} />
-                    </div>
-                  </div>
-                </Dialog.Panel>
-              </Transition.Child>
-            </div>
+    <div id='drawer-example' className={mergeClasses('flex h-full w-full flex-col shadow-xl bg-bg-100 p-5 overflow-y-auto absolute top-0 left-0 dark:bg-gray-800 z-[999999999] transition-transform translate-x-0 items-center duration-300', `${open ? 'translate-x-0' : '-translate-x-full'}`)}>
+      <MainContentCard className='rounded-xl px-0 w-11/12'>
+        <Link to='' className='flex w-full h-fit gap-x-5 items-center px-3 relative' onClick={() => setOpen(false)}>
+          <div className='bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full lg:h-14 lg:w-14' />
+          <div className='flex flex-col'>
+            <label className='font-bold'>Luis E. Zúñiga V.</label>
+            <span className='lg:text-sm'>Front End Developer</span>
           </div>
-        </div>
-      </Dialog>
-    </Transition.Root>
+          <IconChevronRight className='absolute top-[50%] -translate-y-[50%] right-[3%] text-main-text-low' />
+        </Link>
+        <Divider className='w-3/4 self-end bg-gray-500' />
+        {mainMenuItems.map((data, index) => {
+          const Icon = data.Icon
+          return (
+            <Fragment key={index}>
+              <Link to={data.page} className='flex w-full gap-x-5 rounded-lg px-7 py-1 transition-colors duration-300 ease-in-out relative z-50' onClick={() => setOpen(false)}>
+                <span className={`h-7 w-7 ${data.color} rounded-md flex items-center justify-center shadow`}>
+                  <Icon className='h-6 w-6 text-white' />
+                </span>
+                <label className='cursor-pointer'>
+                  <FormattedMessage id={data.title} />
+                </label>
+                <IconChevronRight className='absolute top-[50%] -translate-y-[50%] right-[3%] text-main-text-low' />
+              </Link>
+              {!(index === mainMenuItems.length - 1) && <Divider className='w-[80%] self-end bg-gray-500' />}
+            </Fragment>
+          )
+        })}
+      </MainContentCard>
+
+      <MainContentCard className='rounded-xl px-0 w-11/12'>
+        {menuItemsSec1.map((data, index) => {
+          const Icon = data.Icon
+          return (
+            <Fragment key={index}>
+              <Link to={data.page} className='flex w-full gap-x-5 rounded-lg px-7 py-1 transition-colors duration-300 ease-in-out relative z-50' onClick={() => setOpen(false)}>
+                <span className={`h-7 w-7 ${data.color} rounded-md flex items-center justify-center shadow`}>
+                  <Icon className='h-6 w-6 text-white' />
+                </span>
+                <label className='cursor-pointer'>
+                  <FormattedMessage id={data.title} />
+                </label>
+                <IconChevronRight className='absolute top-[50%] -translate-y-[50%] right-[3%] text-main-text-low' />
+              </Link>
+              {!(index === menuItemsSec1.length - 1) && <Divider className='w-[80%] self-end bg-gray-500' />}
+            </Fragment>
+          )
+        })}
+      </MainContentCard>
+
+      <MainContentCard className='rounded-xl px-0 w-11/12'>
+        {menuItemsSec2.map((data, index) => {
+          const Icon = data.Icon
+          return (
+            <Fragment key={index}>
+              <Link to={data.page} className='flex w-full gap-x-5 rounded-lg px-7 py-1 transition-colors duration-300 ease-in-out relative z-50' onClick={() => setOpen(false)}>
+                <span className={`h-7 w-7 ${data.color} rounded-md flex items-center justify-center shadow`}>
+                  <Icon className='h-6 w-6 text-white' />
+                </span>
+                <label className='cursor-pointer'>
+                  <FormattedMessage id={data.title} />
+                </label>
+                <IconChevronRight className='absolute top-[50%] -translate-y-[50%] right-[3%] text-main-text-low' />
+              </Link>
+              {!(index === menuItemsSec2.length - 1) && <Divider className='w-[80%] self-end bg-gray-500' />}
+            </Fragment>
+          )
+        })}
+      </MainContentCard>
+
+      <MainContentCard className='rounded-xl px-0 w-11/12'>
+        {menuItemsSec3.map((data, index) => {
+          const Icon = data?.Icon
+          if (data.itsSiri) {
+            return (
+              <Fragment key={index}>
+                <Link to='#' className='flex w-full gap-x-5 rounded-lg px-7 py-1 transition-colors duration-300 ease-in-out relative z-50'>
+                  <span className='h-8 w-8 rounded-md flex items-center justify-center p-0 m-0 -ml-0.5 bg-cover bg-no-repeat bg-top' style={{ backgroundImage: `url('${Icon}')` }} />
+                  <label className='cursor-pointer'>
+                    <FormattedMessage id='menu-item-siri' />
+                  </label>
+                  <IconChevronRight className='absolute top-[50%] -translate-y-[50%] right-[3%] text-main-text-low' />
+                </Link>
+                {!(index === menuItemsSec3.length - 1) && <Divider className='w-[80%] self-end bg-gray-500' />}
+              </Fragment>
+            )
+          } else if (data.itsControl) {
+            return (
+              <Fragment key={index}>
+                <Link to='#' className='flex w-full gap-x-5 rounded-lg px-7 py-1 transition-colors duration-300 ease-in-out relative z-50'>
+                  <span className='h-7 w-7 bg-gradient-to-t from-gray-icon-full to-gray-icon-low rounded-md flex items-center justify-center shadow'>
+                    <span className='h-6 w-6' style={{ backgroundImage: `url('${Icon}')`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }} />
+                  </span>
+                  <label className='cursor-pointer'>
+                    <FormattedMessage id='menu-item-control' />
+                  </label>
+                  <IconChevronRight className='absolute top-[50%] -translate-y-[50%] right-[3%] text-main-text-low' />
+                </Link>
+                {!(index === menuItemsSec3.length - 1) && <Divider className='w-[80%] self-end bg-gray-500' />}
+              </Fragment>
+            )
+          }
+          return (
+            <Fragment key={index}>
+              <Link to={data.page} className='flex w-full gap-x-5 rounded-lg px-7 py-1 transition-colors duration-300 ease-in-out relative z-50'>
+                <span className={`h-7 w-7 ${data.color} rounded-md flex items-center justify-center shadow`}>
+                  <Icon className='h-6 w-6 text-white' />
+                </span>
+                <label className='cursor-pointer'>
+                  <FormattedMessage id={data.title} />
+                </label>
+                <IconChevronRight className='absolute top-[50%] -translate-y-[50%] right-[3%] text-main-text-low' />
+              </Link>
+              {!(index === menuItemsSec3.length - 1) && <Divider className='w-[80%] self-end bg-gray-500' />}
+            </Fragment>
+          )
+        })}
+      </MainContentCard>
+    </div>
+
   )
 }
 

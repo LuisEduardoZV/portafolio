@@ -1,9 +1,11 @@
-import { IconMenu } from '@tabler/icons-react'
-import { useEffect, useState } from 'react'
+import { IconChevronLeft, IconMenu } from '@tabler/icons-react'
+import { useEffect, useMemo, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import AsideMenu from '../components/AsideMenu'
+import AsideMenuFloat from '../components/AsideMenuFloat'
 import AsideMenuMovil from '../components/AsideMenuMovil'
 import useConfig from '../hooks/useConfig'
+
 
 // <FormattedMessage id="tittle" />
 const MainContainer = () => {
@@ -12,6 +14,18 @@ const MainContainer = () => {
 
   const [path, setPath] = useState('')
   const [actMenu, setActMenu] = useState(false)
+  const [movil, setMovil] = useState(true)
+
+  const title = useMemo(() => {
+    switch (path) {
+      case 'config':
+        return 'Configuración'
+      case 'projects':
+        return 'Proyectos'
+      default:
+        return 'Información'
+    }
+  }, [path])
 
   useEffect(() => {
     setPath(pathname.slice(1, pathname.length))
@@ -20,8 +34,18 @@ const MainContainer = () => {
   return (
     <main className={`${theme} ${accent} min-h-screen max-h-screen flex flex-row bg-main-fondo bg-cover bg-center bg-no-repeat cursor-default overflow-hidden transition-all duration-300 ease-in-out`}>
       <AsideMenu path={path} />
-      <AsideMenuMovil setOpen={setActMenu} open={actMenu} path={path} />
-      <section className='flex w-[82%] h-full min-h-screen bg-bg-100 transition-all duration-300 ease-in-out sm:w-full relative lg:w-3/4 xl:w-5/6'>
+      <AsideMenuFloat setOpen={setActMenu} open={actMenu} path={path} />
+      <AsideMenuMovil setOpen={setMovil} open={movil} path={path} />
+      <section className='flex h-full min-h-screen bg-bg-100 transition-all duration-300 ease-in-out w-full relative lg:w-3/4 xl:w-5/6 flex-col sm:flex-row'>
+        <div className='w-full px-5 py-3 relative flex items-center sm:hidden'>
+          <div className='py-0.5 flex gap-3 cursor-pointer text-acc-main' onClick={() => setMovil(true)}>
+            <IconChevronLeft />
+            Menu
+          </div>
+          <span className='absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-lg text-main-text font-semibold'>
+            {title}
+          </span>
+        </div>
         <div className='hidden absolute bg-bg-200 p-1 rounded start-5 top-10 hover:cursor-pointer sm:flex lg:hidden' onClick={() => { setActMenu(true) }}>
           <IconMenu className='text-main-text-low' size={22} />
         </div>

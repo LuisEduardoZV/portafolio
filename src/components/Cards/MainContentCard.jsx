@@ -4,7 +4,7 @@ import { useMemo } from 'react'
 import useConfig from '../../hooks/useConfig'
 import { mergeClasses } from '../../utils/mergeClasses'
 
-const MainContentCard = ({ children, className, ...others }) => {
+const MainContentCard = ({ children, className, style, ...others }) => {
   const { font } = useConfig()
 
   const defClasses = useMemo(
@@ -12,12 +12,13 @@ const MainContentCard = ({ children, className, ...others }) => {
     [font]
   )
 
-  return <article className={mergeClasses(defClasses, className)}>{children}</article>
+  return <article className={mergeClasses(defClasses, className)} style={style}>{children}</article>
 }
 
 MainContentCard.propTypes = {
   children: PropTypes.node.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  style: PropTypes.object
 }
 
 export default MainContentCard

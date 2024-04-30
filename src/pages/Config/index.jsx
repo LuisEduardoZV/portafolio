@@ -11,12 +11,12 @@ import Divider from '../../components/ui-components/Divider'
 const Config = () => {
   return (
     <MainCard extraStyles='min-h-screen overflow-y-auto mr-1'>
-      <header className='w-full h-fit py-10 px-5'>
+      <header className='w-full h-fit py-10 px-5 hidden sm:flex'>
         <h1 className='text-2xl font-bold text-main-text'>
           <FormattedMessage id='config-title' />
         </h1>
       </header>
-      <MainContentCard className='duration-300 ease-in-out sm:w-11/12'>
+      <MainContentCard className='duration-300 ease-in-out sm:w-11/12 mt-10 sm:mt-0'>
         <div className='w-full flex justify-between px-2 py-5'>
           <h2>
             <FormattedMessage id='config-aspect' />

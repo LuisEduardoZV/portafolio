@@ -61,7 +61,6 @@ const HoverEffect = memo(({ children, hoverClasses, containerClasses }) => {
       {items.map((item, idx) => {
         const Item = cloneElement(item, {})
         const active = Item?.props?.active
-        console.log(active)
         return (
           <Card key={idx} Item={Item} active={active} idx={idx} hoverClasses={hoverClasses} containerClasses={containerClasses} setHoveredIndex={setHoveredIndex} hoveredIndex={hoveredIndex} />
         )

@@ -76,6 +76,9 @@ export default {
       },
       keyframes: {
         loader: {
+          '100%': { transform: 'translate(0)' }
+        },
+        drawer: {
           '100%': { transform: 'rotate(1turn)' }
         },
         formingImages: {
@@ -103,7 +106,7 @@ export default {
       },
       transitionProperty: {
         visible: 'visibility, opacity'
-      }
+      },
     }
   },
   plugins: [

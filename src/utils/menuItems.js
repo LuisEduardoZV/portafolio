@@ -10,7 +10,7 @@ const mainMenuItems = [
 const menuItemsSec1 = [
   { Icon: IconWifi, color: 'bg-gradient-to-t from-blue-icon-full to-blue-icon-low', page: 'wifi', title: 'menu-item-wifi' },
   { Icon: IconBluetooth, color: 'bg-gradient-to-t from-blue-icon-full to-blue-icon-low', page: 'bluetooth', title: 'menu-item-bluetooth' },
-  { Icon: IconWorldWww, color: 'bg-gradient-to-t from-blue-icon-full to-blue-icon-low', page: '#', title: 'menu-item-netowrk' }
+  { Icon: IconWorldWww, color: 'bg-gradient-to-t sm:from-blue-icon-full sm:to-blue-icon-low from-green-icon-full to-green-icon-low', page: '#', title: 'menu-item-netowrk' }
 ]
 
 const menuItemsSec2 = [

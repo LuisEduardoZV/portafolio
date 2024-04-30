@@ -9,9 +9,9 @@ import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <MainCard extraStyles='flex-row gap-5 h-full lg:flex-row lg:gap-5 lg:items-start'>
+    <MainCard extraStyles='gap-0 sm:gap-5 h-full lg:flex-row lg:gap-5 lg:items-start'>
 
-      <article className='max-w-full w-1/2 h-full flex-1 sm:w-10/12 lg:w-1/2'>
+      <article className='max-w-full w-full h-full flex-1 sm:w-10/12 lg:w-1/2'>
         <header className='w-full h-fit pt-10 pb-5 px-5 sm:px-0 lg:px-5'>
           <h1 className='text-2xl font-bold text-main-text flex items-center gap-2'>
             <IconUserScan size={28} />
@@ -58,7 +58,7 @@ const About = () => {
         </MainContentCard>
       </article>
 
-      <article className='max-w-full w-1/2 h-full flex-1 sm:w-10/12 sm:mb-10 lg:mb-0 lg:w-1/2'>
+      <article className='max-w-full w-full h-full flex-1 mb-16 sm:w-10/12 sm:mb-10 lg:mb-0 lg:w-1/2'>
         <header className='w-full h-fit pt-10 pb-5 px-5 sm:px-0 lg:px-5'>
           <h1 className='text-2xl font-bold text-main-text flex items-center gap-2'>
             <IconCertificate size={28} />
