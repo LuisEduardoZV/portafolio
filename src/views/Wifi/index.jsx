@@ -181,7 +181,7 @@ const Wifi = () => {
         </MainContentCard>
       </MainCard>
       <article className={`flex flex-col items-center justify-center w-full sm:w-5/6 h-full m-0 ${modal ? 'z-10 opacity-100' : '-z-10 opacity-0'} absolute bg-black/10 backdrop-blur-[1px] transition-all duration-200 ease-linear delay-100 sm:w-full`}>
-        <section className='bg-bg-200 shadow p-3 rounded-lg max-w-lg w-full h-full sm:h-fit relative'>
+        <section className='bg-bg-100 shadow p-3 rounded-lg max-w-lg w-full h-full sm:h-fit relative'>
           <Conect
             handlePass={handlePass}
             handleShowPass={handleShowPass}

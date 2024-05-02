@@ -40,8 +40,8 @@ const MainContainer = () => {
       <AsideMenu path={path} />
       <AsideMenuFloat setOpen={setActMenu} open={actMenu} path={path} />
       <AsideMenuMovil setOpen={setMovil} open={movil} path={path} />
-      <section className='flex h-full min-h-screen bg-bg-100 transition-all duration-300 ease-in-out w-full relative lg:w-3/4 xl:w-5/6 flex-col sm:flex-row'>
-        <div className='w-full px-5 py-3 relative flex items-center sm:hidden'>
+      <section className='flex h-full min-h-screen bg-bg-100 transition-all duration-300 ease-in-out w-full relative lg:w-3/4 xl:w-5/6 flex-col sm:flex-row py-7 sm:py-0'>
+        <div className='w-full px-5 py-3 flex items-center sm:hidden fixed bg-bg-100/50 z-[999999] backdrop-blur-lg top-0'>
           <div className='py-0.5 flex gap-3 cursor-pointer text-acc-main' onClick={() => setMovil(true)}>
             <IconChevronLeft />
             Menu
