@@ -27,7 +27,7 @@ const Projects = () => {
               Antenna App
               <IconLink className='text-acc-main' />
             </a>
-            <p className='w-full transition-all duration-300 ease-in-out text-balance overflow-hidden truncate sm:max-h-11 sm:text-sm group-hover/card:max-h-max lg:text-base lg:max-h-max'>
+            <p className='w-auto transition-all duration-300 ease-in-out sm:text-balance overflow-hidden truncate sm:max-h-11 sm:text-sm group-hover/card:max-h-max lg:text-base lg:max-h-max'>
               Antenna App es una herramienta diseñada para la gestión eficiente de clientes y antenas. Ofrece funcionalidades para la creación de usuarios, vinculación de antenas y generación de reportes de consumo de datos. Dirigida especialmente a empresas de alquiler de equipos, proporciona una solución integral para optimizar sus operaciones.
             </p>
             <div className='flex justify-between flex-row'>
@@ -56,7 +56,7 @@ const Projects = () => {
             <h1 className='text-xl font-bold text-main-text flex items-center gap-3 sm:group-hover/card:pl-48 sm:text-right lg:group-hover/card:pl-0 transition-all duration-300 ease-in-out' rel='noreferrer'>
               Server Antenna App
             </h1>
-            <p className='w-full transition-all duration-300 ease-in-out sm:text-sm sm:group-hover/card:max-h-max lg:text-base lg:max-h-max'>
+            <p className='w-full transition-all duration-300 ease-in-out sm:text-sm sm:group-hover/card:max-h-max lg:text-base lg:max-h-max text-balance'>
               Servidor desarrollado para la lectura y escritura de datos del proyecto Antenna App. Cuenta con conexión a Base de Datos en PostgresSQL en Vercel ayudando a que permanezcan los datos.
             </p>
             <div className='flex justify-between flex-row self-start w-full'>
@@ -86,7 +86,7 @@ const Projects = () => {
               Weather App
               <IconLink className='text-acc-main' />
             </a>
-            <p className='w-full transition-all duration-300 ease-in-out text-balance overflow-hidden truncate sm:max-h-11 sm:text-sm sm:group-hover/card:max-h-max lg:text-base lg:max-h-max'>
+            <p className='w-full transition-all duration-300 ease-in-out sm:text-balance overflow-hidden truncate sm:max-h-11 sm:text-sm sm:group-hover/card:max-h-max lg:text-base lg:max-h-max'>
               Weather App muestra infomación climatológica en tu zona geografica o, si se desea, en cualquier parte del mundo que busque. Da información del día en curso así como de los siguientes 4 días mostrando datos relacionados a la temperatura, velocidad y dirección del viente, presión atmosferica y contaminación atmosférica.
             </p>
             <div className='flex justify-between flex-row'>
