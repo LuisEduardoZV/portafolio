@@ -16,7 +16,7 @@ const ConectFormMovil = ({ handlePass, handleShowPass, handleCheckPassword, show
       <div className='w-full mt-10 items-center px-2'>
         <div className='bg-bg-100 px-5 py-2.5 rounded-xl flex items-center gap-3'>
           <label className='w-auto'><FormattedMessage id='wifi-password' /></label>
-          <input type='password' value={pass} onChange={(e) => handlePass(e)} autoFocus className='justify-self-start bg-transparent ring-0 h-full w-full outline-none' />
+          <input type='password' value={pass} onChange={(e) => handlePass(e)} className='justify-self-start bg-transparent ring-0 h-full w-full outline-none' />
         </div>
         <label className='flex w-full px-5 sm:px-10 text-main-text-low text-sm mt-3'>
           Puedes acceder a esta red Wi-Fi al acercar tu noIphone a cualquier dispositivo conectado a esta red y que te tenga entre sus contactos

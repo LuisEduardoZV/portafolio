@@ -74,7 +74,7 @@ const Projects = () => {
             </div>
           </div>
         </MainContentCard>
-        <MainContentCard className='duration-300 ease-in-out flex-col gap-5 relative lg:max-h-max sm:w-11/12 sm:relative group/card sm:max-h-64 lg:flex-row lg:hover:shadow-main-card'>
+        <MainContentCard className='duration-300 ease-in-out flex-col gap-5 relative mb-20 sm:mb-0 lg:max-h-max sm:w-11/12 sm:relative group/card sm:max-h-64 lg:flex-row lg:hover:shadow-main-card'>
           <div className='h-full lg:max-h-max w-5/6 -mt-24 ml-28 sm:-mt-0 sm:ml-0 rounded-lg group/image peer sm:w-2/3 sm:absolute sm:max-h-44 sm:inset-0 sm:start-1/2 sm:-translate-x-1/2 sm:-top-20 sm:group-hover/card:-translate-y-10 sm:group-hover/card:translate-x-3 transition-transform duration-300 ease-in-out lg:static lg:translate-x-0 lg:group-hover/card:translate-y-0 lg:group-hover/card:translate-x-0'>
             <div className='lg:scale-[1.2] 2xl:scale-[1.1] lg:group-hover/card:-translate-x-7 transition-all duration-300 ease-in-out lg:group-hover/card:shadow-[1px_3px_13px_3px_rgba(116,116,116,1)] rounded-lg p-0 relative flex w-full h-full sm:group-hover/image:scale-100 sm:xl:group-hover/image:translate-x-0 lg:-translate-x-8 lg:group-hover/image:scale-[2] lg:group-hover/image:translate-x-20 xl:group-hover/image:scale-[1.3] xl:group-hover/card:scale-[1.55] xl:group-hover/card:translate-x-8 2xl:group-hover/image:scale-[1.3] 2xl:group-hover/card:scale-[1.3] 2xl:group-hover/card:translate-x-16'>
               <div className='bg-weatherMain bg-origin-border bg-center bg-cover bg-no-repeat absolute aspect-video lg:max-h-72 2xl:max-h-60 w-full h-full rounded-lg transition-all duration-300 ease-in-out group-hover/image:bg-weatherHour ' />
@@ -104,7 +104,7 @@ const Projects = () => {
             </div>
           </div>
         </MainContentCard>
-        <MainContentCard className='duration-300 ease-in-out flex-col gap-5 relative mb-20 sm:mb-0 lg:max-h-max 2xl:max-h-60 sm:w-11/12 sm:relative group/card sm:max-h-64 lg:flex-row-reverse lg:hover:shadow-main-card lg:mb-16'>
+        {/* <MainContentCard className='duration-300 ease-in-out flex-col gap-5 relative mb-20 sm:mb-0 lg:max-h-max 2xl:max-h-60 sm:w-11/12 sm:relative group/card sm:max-h-64 lg:flex-row-reverse lg:hover:shadow-main-card lg:mb-16'>
           <div className='h-full lg:max-h-max w-5/6 -mt-24 -ml-28 sm:-mt-0 sm:-ml-0 rounded-lg group/image peer sm:w-2/3 sm:absolute sm:max-h-44 sm:inset-0 sm:start-1/2 sm:-translate-x-1/2 sm:-top-20 sm:group-hover/card:-translate-y-10 sm:group-hover/card:-translate-x-full transition-transform duration-300 ease-in-out lg:static lg:translate-x-0 lg:group-hover/card:translate-y-0 lg:group-hover/card:translate-x-0'>
             <div className='lg:scale-[1.3] 2xl:scale-[1] lg:group-hover/card:translate-x-7 transition-all duration-300 ease-in-out relative lg:group-hover/card:shadow-[1px_3px_13px_3px_rgba(116,116,116,1)] rounded-lg flex w-full sm:group-hover/image:scale-100 sm:xl:group-hover/image:translate-x-0 lg:translate-x-7 lg:group-hover/image:scale-[2] lg:group-hover/image:-translate-x-20 xl:group-hover/image:scale-[1.3] xl:group-hover/card:scale-[1.55] xl:group-hover/card:-translate-x-8 2xl:group-hover/image:scale-[1.3] 2xl:group-hover/card:scale-[1.3] 2xl:group-hover/card:-translate-x-16'>
               <div className='bg-mainDefault bg-origin-border bg-center bg-cover bg-no-repeat absolute top-0 right-0 m-0 p-0 aspect-video lg:max-h-72 2xl:max-h-60 w-full rounded-lg transition-all duration-300 ease-in-out group-hover/image:scale-100 group-hover:bg-mainBlack' />
@@ -132,7 +132,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </MainContentCard>
+  </MainContentCard> */}
       </section>
     </MainCard>
   )
