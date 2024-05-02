@@ -12,7 +12,7 @@ import MainContentCard from './Cards/MainContentCard'
 
 export default function AsideMenuMovil ({ setOpen, open, path }) {
   return (
-    <div className={mergeClasses('flex sm:hidden h-full w-full flex-col shadow-xl bg-bg-100 p-5 overflow-y-auto absolute top-0 left-0 dark:bg-gray-800 z-[999999999] transition-transform translate-x-0 items-center duration-300', `${open ? 'translate-x-0' : '-translate-x-full'}`)}>
+    <div className={mergeClasses('flex sm:hidden h-screen min-h-screen w-full flex-col shadow-xl bg-bg-100 p-5 overflow-y-auto absolute top-0 left-0 dark:bg-gray-800 z-[999999999] transition-transform translate-x-0 items-center duration-300', `${open ? 'translate-x-0' : '-translate-x-full'}`)}>
       <MainContentCard className='rounded-xl px-0 w-11/12'>
         <Link to='' className='flex w-full h-fit gap-x-5 items-center px-3 relative' onClick={() => setOpen(false)}>
           <div className='bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full lg:h-14 lg:w-14' />

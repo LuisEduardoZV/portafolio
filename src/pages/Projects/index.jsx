@@ -27,7 +27,7 @@ const Projects = () => {
               Antenna App
               <IconLink className='text-acc-main' />
             </a>
-            <p className='w-auto transition-all duration-300 ease-in-out text-balance overflow-hidden truncate sm:max-h-11 sm:text-sm group-hover/card:max-h-max lg:text-base lg:max-h-max'>
+            <p className='w-auto transition-all duration-300 ease-in-out text-balance overflow-hidden truncate h-max sm:max-h-11 sm:text-sm group-hover/card:max-h-max lg:text-base lg:max-h-max'>
               Antenna App es una herramienta diseñada para la gestión eficiente de clientes y antenas. Ofrece funcionalidades para la creación de usuarios, vinculación de antenas y generación de reportes de consumo de datos. Dirigida especialmente a empresas de alquiler de equipos, proporciona una solución integral para optimizar sus operaciones.
             </p>
             <div className='flex justify-between flex-row'>
