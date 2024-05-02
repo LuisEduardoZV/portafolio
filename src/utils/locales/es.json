@@ -35,8 +35,11 @@
 	"config-aspect": "Aspecto",
 	"config-color": "Color de acento",
 	"config-font": "Tipo de letra",
+	"config-font-movil": "Negritas",
 	"config-blur": "Permitir las transparencias en el sistema",
+	"config-blur-movil": "Transparencias en menu",
 	"config-language": "Cambiar idioma del sistema",
+	"config-language-movil": "Idioma",
 
 	"wifi-info": "Se requiere de una red Wi-Fi para usar NoAirDrop, NoAirPlay, las notificaciones de olvido y la precisión de ubicación mejorada.",
 	"wifi-subtitle": "Redes",

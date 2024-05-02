@@ -22,6 +22,10 @@ const MainContainer = () => {
         return 'Configuración'
       case 'projects':
         return 'Proyectos'
+      case 'wifi':
+        return 'Wi-Fi'
+      case 'bluetooth':
+        return 'Bluetooth'
       default:
         return 'Información'
     }

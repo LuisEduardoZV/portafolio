@@ -35,8 +35,11 @@
 	"config-aspect": "Aspect",
 	"config-color": "Accent colour",
 	"config-font": "Font type",
+	"config-font-movil": "Bold",
 	"config-blur": "Allow transparencies in the system",
+	"config-blur-movil": "Transparencies in menu",
 	"config-language": "Change system language",
+	"config-language-movil": "Language",
 
 	"wifi-info": "A Wi-Fi network is required to use NoAirDrop, NoAirPlay, forget notifications and improved location accuracy.",
 	"wifi-subtitle": "Networks",

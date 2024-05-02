@@ -50,6 +50,7 @@ export default {
       backgroundImage: {
         profile: "url('/src/assets/profile.jpg')",
         fondo: "url('/src/assets/fondo.jpeg')",
+        fondoMovil: "url('/src/assets/fondoMovil.webp')",
         'main-fondo': "url('/src/assets/mainFondo.png')",
         speaker: "url('/src/assets/icons/speaker.svg')",
         'gradiant-loader': 'linear-gradient(0deg ,#766DF480 50%,#766DF4FF 0) center/4px 100%',
@@ -106,7 +107,7 @@ export default {
       },
       transitionProperty: {
         visible: 'visibility, opacity'
-      },
+      }
     }
   },
   plugins: [

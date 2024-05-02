@@ -38,8 +38,8 @@ const ChangeAccent = () => {
   }, [accent])
 
   return (
-    <div className='flex w-fit h-fit gap-x-3 items-start justify-center'>
-      <div className='w-fit flex flex-col items-center gap-y-1 mr-2'>
+    <div className='flex w-full sm:w-fit h-fit sm:gap-x-3 items-start justify-between sm:justify-center'>
+      <div className='w-fit flex flex-col items-center gap-y-4 sm:gap-y-1 mr-2'>
         <span className={`h-5 w-5 bg-blue-icon-full rounded-full cursor-pointer ${selected === 0 && 'ring-1 ring-acc-main ring-offset-2 ring-offset-bg-200'} transition-all duration-300 ease-in-out`} onClick={(event) => handleListItemClick(event, 'acc-default')} />
         <label>
           <FormattedMessage id='acc-default' />
