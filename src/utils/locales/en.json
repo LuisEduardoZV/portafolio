@@ -15,6 +15,7 @@
 	"menu-item-control": "Control Center",
 	"menu-item-siri": "Siri & Spotlight",
 	"menu-item-privacy": "Privacy & Secutity",
+	"menu-item-info": "Information",
 
 	"lng-es": "Spanish",
 	"lng-en": "English",
@@ -50,8 +51,53 @@
 	"wifi-show": "Show password",
 	"wifi-cancel": "Cancel",
 	"wifi-send": "Access",
+	"wifi-ing": "Enter",
+	"wifi-conect": "Connect",
+	"wifi-info-movil": "You can access this Wi-Fi network by bringing your noIphone close to any device connected to this network that has you in its contacts.",
+	"wifi-info-title": "Enter the password for {wifi}",
+
+	"bth-mydevices": "My devices",
+	"bth-nodevices": "No Bluetooth device",
+	"bth-noconect": "No connection",
+	"bth-conect": "Connected",
+	"bth-neardevices": "Nearby devices",
+	"bth-searching": "Searching for...",
+	"bth-on-desk": "Now visible as MocBaack NoAir",
+	"bth-on-movil": "This NoIphone will be visible as Luis’ NoIphone while the Bluetooth configuration is open.",
+	"bth-off": "Location, NoAirDrop and No AirPlay use Bluetlooth",
 
 	"proj-info-1": "Antenna App is a tool designed for the efficient management of clients and antennas. It offers functionalities for user creation, antenna linking and data consumption reporting. Aimed especially at equipment rental companies, it provides a comprehensive solution to optimise their operations.",
-	"proj-info-2": "Server developed for reading and writing data from the Antenna App project. It has a connection to a PostgresSQL database in Vercel helping to keep the data.",
-	"proj-info-3": "Weather App displays weather information in your geographical area or, if desired, anywhere in the world you are looking for. It gives information for the current day as well as the next 4 days showing data related to temperature, wind speed and direction, air pressure and air pollution."
+	"proj-info-2": "Server developed for reading and writing data from the Antenna App project. It has a connection to a Postgres database in Vercel helping to keep the data.",
+	"proj-info-3": "Weather App displays weather information in your geographical area or, if desired, anywhere in the world you are looking for. It gives information for the current day as well as the next 4 days showing data related to temperature, wind speed and direction, air pressure and air pollution.",
+
+	"about-title": "About me",
+	"about-hi": "Hello!",
+	"about-info-1": "My name is {name}, I'm 24 years old, I'm a Programming Technician and {degree}, graduated from ESCOM.",
+	"about-info-2": "Since I entered the programming world I always had a greater tendency towards {special}, especializandome más en el uso de {expert}. However, I also have basic knowledge for Back-End development.",
+	"about-info-3": "I'm {iam} about what I like and {loved}. I try to make my work as perfect as possible so I'm always researching and learning to do it better and better.",
+	"about-degree": "Computer Systems Engineer",
+	"about-special": "Front-End development",
+	"about-iam": "passionate",
+	"about-loved": "programming in React fascinates me",
+	"about-habil": "Skills",
+	"about-exp": "Experience",
+	"about-apt": "Aptitudes",
+
+	"hab-1": "Teamwork",
+	"hab-2": "Creative",
+	"hab-3": "Intermediate English",
+	"hab-4": "Autonomous",
+	"hab-5": "Proactive",
+
+	"job-info-time-1": "May 2023 - Present",
+	"job-info-title-1": "React Front End Developer at 2 Real People Solutions.",
+	"job-info-desc-1": "Lead front end developer in company projects like Tangerine Metrics and EverCargo. Project management with Bitbucket and Jira.",
+
+	"job-info-time-2": "January 2022 - December 2022",
+	"job-info-title-2": "Back-End maintenance at D.E.S.S.",
+	"job-info-desc-2": "Administrative support in IT as well as maintenance of the SISAE-Siboltra and Job Fair programmes.",
+
+	"job-info-time-3": "June 2019 - September 2019",
+	"job-info-title-3": "Back End Developer at DC Mayorista S.A. de C.V.",
+	"job-info-desc-3": "Part of the group in charge of the company's internal platform; mainly made with Javascript and Java backend."
 }

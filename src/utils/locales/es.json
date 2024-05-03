@@ -50,8 +50,53 @@
 	"wifi-show": "Mostrar contraseña",
 	"wifi-cancel": "Cancelar",
 	"wifi-send": "Acceder",
+	"wifi-ing": "Ingresar",
+	"wifi-conect": "Conectar",
+	"wifi-info-movil": "Puedes acceder a esta red Wi-Fi al acercar tu noIphone a cualquier dispositivo conectado a esta red y que te tenga entre sus contactos",
+	"wifi-info-title": "Ingrese la contraseña de {wifi}",
+
+	"bth-mydevices": "Mis dispositivos",
+	"bth-nodevices": "Ningún Dispositivo Bluetooth",
+	"bth-noconect": "Sin conexión",
+	"bth-conect": "Conectado",
+	"bth-neardevices": "Dispositivos cercanos",
+	"bth-searching": "Buscando...",
+	"bth-on-desk": "Ahora visible como 'MocBaack NoAir'",
+	"bth-on-movil": "Este NoIphone etará visible como 'NoIphone de Luis' mientras la configuración de Bluetooth esté abierta.",
+	"bth-off": "Localización, NoAirDrop y No AirPlay usan Bluetlooth",
 
 	"proj-info-1": "Antenna App es una herramienta diseñada para la gestión eficiente de clientes y antenas. Ofrece funcionalidades para la creación de usuarios, vinculación de antenas y generación de reportes de consumo de datos. Dirigida especialmente a empresas de alquiler de equipos, proporciona una solución integral para optimizar sus operaciones.",
-	"proj-info-2": "Servidor desarrollado para la lectura y escritura de datos del proyecto Antenna App. Cuenta con conexión a Base de Datos en PostgresSQL en Vercel ayudando a que permanezcan los datos.",
-	"proj-info-3": "Weather App muestra infomación climatológica en tu zona geografica o, si se desea, en cualquier parte del mundo que busque. Da información del día en curso así como de los siguientes 4 días mostrando datos relacionados a la temperatura, velocidad y dirección del viente, presión atmosferica y contaminación atmosférica."
+	"proj-info-2": "Servidor desarrollado para la lectura y escritura de datos del proyecto Antenna App. Cuenta con conexión a Base de Datos en Postgres en Vercel ayudando a la permanencia de los datos.",
+	"proj-info-3": "Weather App muestra información climatológica en tu zona geográfica o, si se desea, en cualquier parte del mundo que busque. Da información del día en curso así como de los siguientes 4 días mostrando datos relacionados a la temperatura, velocidad y dirección del viento, presión atmosférica y contaminación atmosférica.",
+
+	"about-title": "Acerca de mi",
+	"about-hi": "Hola!",
+	"about-info-1": "Mi nombre es {name}, tengo 24 años, soy {degree}, egresado de la ESCOM.",
+	"about-info-2": "Desde que entre al mundo de la programación siempre tuve una mayor tendencia hacia el {special}, especializandome más en el uso de {expert}. Aún así, también cuento con conocimientos básicos para el desarrollo Back-End.",
+	"about-info-3": "Soy una persona {iam} en lo que le gusta y {loved}. Intento hacer mi trabajo lo más perfecto posible por lo que siempre estoy investigando y aprendiendo para cada vez hacerlo mejor.",
+	"about-degree": "Técnico en Programación e Ingeniero en Sistemas Computacionales",
+	"about-special": "desarrollo Front-End",
+	"about-iam": "apasionada",
+	"about-loved": "programar en React me fascina",
+	"about-habil": "Habilidades",
+	"about-exp": "Experiencia",
+	"about-apt": "Aptitudes",
+
+	"hab-1": "Tabajo en equipo",
+	"hab-2": "Creativo",
+	"hab-3": "Inglés intermedio",
+	"hab-4": "Autónomo",
+	"hab-5": "Proactivo",
+
+	"job-info-time-1": "Mayo 2023 - Actualidad",
+	"job-info-title-1": "React Front End Developer en 2 Real People Solutions",
+	"job-info-desc-1": "Principal programador de interfaz en proyectos de la empresa como Tangerine Metrics y EverCargo. Gestión de proyectos con Bitbucket y Jira",
+
+	"job-info-time-2": "Enero 2022 - Diciembre 2022",
+	"job-info-title-2": "Mantenimiento Back-End en D.E.S.S",
+	"job-info-desc-2": "Apoyo administrativo en informática así como manutención de los programas SISAE-Siboltra y Feria del Empleo",
+
+	"job-info-time-3": "Junio 2019 - Septiembre 2019",
+	"job-info-title-3": "Back End Developer en DC Mayorista S.A de C.V",
+	"job-info-desc-3": "Parte del grupo encargado de la plataforma interna de la empresa; hecha principalmente con Javascript y backend en Java."
 }

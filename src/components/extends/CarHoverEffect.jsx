@@ -7,7 +7,7 @@ import useConfig from '../../hooks/useConfig'
 import { defaultTheme, themes } from '../../utils/colorsConstants'
 
 const Card = ({ Item, active, idx, hoverClasses, containerClasses, setHoveredIndex, hoveredIndex }) => {
-  const hoverDefClass = useMemo(() => `absolute inset-0 start-4 h-full w-[98%] ${active ? 'bg-acc-main shadow-md' : 'bg-red-200'} block rounded-xl`, [active])
+  const hoverDefClass = useMemo(() => `absolute inset-0 start-4 h-full w-[98%] ${active ? 'bg-acc-main shadow-md' : 'bg-bg-100'} block rounded-xl z-50`, [active])
   const { accent, theme } = useConfig()
 
   const bgcolor = useMemo(() => {
@@ -23,7 +23,7 @@ const Card = ({ Item, active, idx, hoverClasses, containerClasses, setHoveredInd
   return (
     <div
       key={idx}
-      className={mergeClasses(`relative group block p-2 h-full w-full ${(idx === 1 || idx === 5) && 'mb-6'}`, containerClasses)}
+      className={mergeClasses('relative group block p-2 h-full w-full', containerClasses)}
       onMouseEnter={() => setHoveredIndex(idx)}
       onMouseLeave={() => setHoveredIndex(null)}
     >
@@ -32,10 +32,8 @@ const Card = ({ Item, active, idx, hoverClasses, containerClasses, setHoveredInd
           <motion.span
             className={mergeClasses(hoverDefClass, hoverClasses)}
             layoutId='hoverBackground'
-            initial={(hoveredIndex === idx) ? { opacity: 1, backgroundColor: bgcolor.acc } : { opacity: 0, backgroundColor: bgcolor.bg }}
-            animate={
-              (hoveredIndex === idx) ? { opacity: 1, backgroundColor: bgcolor.acc } : { opacity: 0, backgroundColor: bgcolor.bg }
-            }
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{
               opacity: 0,
               transition: { duration: 0.15, delay: 0.2 }

@@ -50,8 +50,53 @@
 	"wifi-show": "Mostrar palavra-passe",
 	"wifi-cancel": "Cancelar",
 	"wifi-send": "Acesso",
+	"wifi-ing": "Introduzir",
+	"wifi-conect": "Conectar",
+	"wifi-info-movil": "Pode aceder a esta rede Wi-Fi aproximando o noIphone de qualquer dispositivo ligado a esta rede que o tenha nos seus contactos.",
+	"wifi-info-title": "Introduza a palavra-passe para {wifi}",
+
+	"bth-mydevices": "Os meus dispositivos",
+	"bth-nodevices": "Nenhum dispositivo Bluetooth",
+	"bth-noconect": "Sem ligação",
+	"bth-conect": "Ligado",
+	"bth-neardevices": "Dispositivos próximos",
+	"bth-searching": "A procurar por...",
+	"bth-on-desk": "Agora visível como 'MocBaack NoAir'",
+	"bth-on-movil": "Este NoIphone será visível como 'Luis' NoIphone' enquanto a definição Bluetooth estiver aberta.",
+	"bth-off": "Localização, NoAirDrop e No AirPlay utilizam Bluetlooth",
 
 	"proj-info-1": "A Antenna App é uma ferramenta concebida para a gestão eficiente de clientes e antenas. Oferece funcionalidades para a criação de utilizadores, ligação de antenas e relatórios de consumo de dados. Destinada especialmente às empresas de aluguer de equipamentos, oferece uma solução completa para otimizar as suas operações.",
-	"proj-info-2": "Servidor desenvolvido para a leitura e a escrita dos dados do projeto Antenna App. Tem uma ligação a uma base de dados PostgresSQL em Vercel que ajuda a manter os dados.",
-	"proj-info-3": "A aplicação meteorológica apresenta informações meteorológicas na sua área geográfica ou, se desejar, em qualquer parte do mundo que esteja a procurar. Fornece informações para o dia atual e para os próximos 4 dias, mostrando dados relacionados com a temperatura, a velocidade e a direção do vento, a pressão atmosférica e a poluição atmosférica."
+	"proj-info-2": "Servidor desenvolvido para a leitura e a escrita dos dados do projeto Antenna App. Tem uma ligação a uma base de dados Postgres em Vercel que ajuda a manter os dados.",
+	"proj-info-3": "A aplicação meteorológica apresenta informações meteorológicas na sua área geográfica ou, se desejar, em qualquer parte do mundo que esteja a procurar. Fornece informações para o dia atual e para os próximos 4 dias, mostrando dados relacionados com a temperatura, a velocidade e a direção do vento, a pressão atmosférica e a poluição atmosférica.",
+
+	"about-title": "Sobre mim",
+	"about-hi": "Olá!",
+	"about-info-1": "O meu nome é {name},  tenho 24 anos, sou Técnico de Programação e {degree}, licenciado pela ESCOM.",
+	"about-info-2": "Desde que entrei no mundo da programação sempre tive uma maior tendência para o {special}, especializando-me mais na utilização de {expert}. No entanto, também tenho conhecimentos básicos para desenvolvimento Back-End.",
+	"about-info-3": "Sou {iam} pelo que gosto e {loved}. Tento que o meu trabalho seja o mais perfeito possível por isso estou sempre a pesquisar e a aprender para fazer cada vez melhor.",
+	"about-degree": "Engenheiro de Sistemas Informáticos",
+	"about-special": "desenvolvimento Front-End",
+	"about-iam": "apaixonado",
+	"about-loved": "programar em React fascina-me",
+	"about-habil": "Competências",
+	"about-exp": "Experiência",
+	"about-apt": "Capacidades",
+
+	"hab-1": "Trabalho em equipa",
+	"hab-2": "Criativo",
+	"hab-3": "Inglês intermédio",
+	"hab-4": "Autónomo",
+	"hab-5": "Proactivo",
+
+	"job-info-time-1": "Maio de 2023 - Presente",
+	"job-info-title-1": "Desenvolvedor de Front End React na 2 Real People Solutions.",
+	"job-info-desc-1": "Desenvolvedor front end líder em projetos da empresa como Tangerine Metrics e EverCargo. Gerenciamento de projetos com Bitbucket e Jira.",
+
+	"job-info-time-2": "Janeiro de 2022 - Dezembro de 2022",
+	"job-info-title-2": "Manutenção de back-end na D.E.S.S.",
+	"job-info-desc-2": "Apoio administrativo em TI, bem como manutenção dos programas SISAE-Siboltra e Feira de Emprego.",
+
+	"job-info-time-3": "Junho de 2019 - Setembro de 2019",
+	"job-info-title-3": "Desenvolvedor Back End na DC Mayorista S.A. de C.V.",
+	"job-info-desc-3": "Parte do grupo responsável pela plataforma interna da empresa; principalmente feito com Javascript e backend Java."
 }

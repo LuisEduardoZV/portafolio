@@ -5,6 +5,7 @@ import AsideMenu from '../components/AsideMenu'
 import AsideMenuFloat from '../components/AsideMenuFloat'
 import AsideMenuMovil from '../components/AsideMenuMovil'
 import useConfig from '../hooks/useConfig'
+import { FormattedMessage } from 'react-intl'
 
 
 // <FormattedMessage id="tittle" />
@@ -19,15 +20,15 @@ const MainContainer = () => {
   const title = useMemo(() => {
     switch (path) {
       case 'config':
-        return 'Configuración'
+        return 'menu-item-config'
       case 'projects':
-        return 'Proyectos'
+        return 'menu-item-projects'
       case 'wifi':
-        return 'Wi-Fi'
+        return 'menu-item-wifi'
       case 'bluetooth':
-        return 'Bluetooth'
+        return 'menu-item-bluetooth'
       default:
-        return 'Información'
+        return 'menu-item-info'
     }
   }, [path])
 
@@ -47,7 +48,7 @@ const MainContainer = () => {
             Menu
           </div>
           <span className='absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-lg text-main-text font-semibold'>
-            {title}
+            <FormattedMessage id={title} />
           </span>
         </div>
         <div className='hidden absolute bg-bg-200 p-1 rounded start-5 top-10 hover:cursor-pointer sm:flex lg:hidden' onClick={() => { setActMenu(true) }}>

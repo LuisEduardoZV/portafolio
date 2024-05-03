@@ -50,8 +50,53 @@
 	"wifi-show": "Afficher le mot de passe",
 	"wifi-cancel": "Annuler",
 	"wifi-send": "Accès",
+	"wifi-ing": "Entrer",
+	"wifi-conect": "Se connecter",
+	"wifi-info-movil": "Vous pouvez accéder à ce réseau Wi-Fi en approchant votre noIphone de n'importe quel appareil connecté à ce réseau qui vous a dans ses contacts.",
+	"wifi-info-title": "Entrez le mot de passe pour {wifi}",
+
+	"bth-mydevices": "Mes appareils",
+	"bth-nodevices": "Pas de périphérique Bluetooth",
+	"bth-noconect": "Pas de connexion",
+	"bth-conect": "Connecté",
+	"bth-neardevices": "Appareils à proximité",
+	"bth-searching": "Recherche de...",
+	"bth-on-desk": "Maintenant visible en tant que 'MocBaack NoAir'",
+	"bth-on-movil": "Ce NoIphone sera visible en tant que 'Luis' NoIphone' tant que la configuration Bluetooth est ouverte.",
+	"bth-off": "Location, NoAirDrop et No AirPlay utilisent Bluetlooth",
 
 	"proj-info-1": "Antenna App est un outil conçu pour la gestion efficace des clients et des antennes. Il offre des fonctionnalités de création d'utilisateurs, de liaison d'antennes et de rapports sur la consommation de données. Destiné en particulier aux sociétés de location de matériel, il fournit une solution complète pour optimiser leurs opérations.",
-	"proj-info-2": "Serveur développé pour lire et écrire les données du projet Antenna App. Il est connecté à une base de données PostgresSQL à Vercel, ce qui permet de conserver les données.",
-	"proj-info-3": "Weather App affiche des informations météorologiques dans votre zone géographique ou, si vous le souhaitez, n'importe où dans le monde. Elle fournit des informations pour la journée en cours ainsi que pour les 4 jours suivants, avec des données relatives à la température, à la vitesse et à la direction du vent, à la pression atmosphérique et à la pollution de l'air."
+	"proj-info-2": "Serveur développé pour lire et écrire les données du projet Antenna App. Il est connecté à une base de données Postgres à Vercel, ce qui permet de conserver les données.",
+	"proj-info-3": "Weather App affiche des informations météorologiques dans votre zone géographique ou, si vous le souhaitez, n'importe où dans le monde. Elle fournit des informations pour la journée en cours ainsi que pour les 4 jours suivants, avec des données relatives à la température, à la vitesse et à la direction du vent, à la pression atmosphérique et à la pollution de l'air.",
+
+	"about-title": "A propos de moi",
+	"about-hi": "Bonjour!",
+	"about-info-1": "Je m'appelle {name}, j'ai 24 ans, je suis technicien en programmation et {degree}, diplômé de l'ESCOM.",
+	"about-info-2": "Depuis que je suis entré dans le monde de la programmation, j'ai toujours eu une plus grande tendance vers le {special}, en me spécialisant davantage dans l'utilisation de {expert}. Cependant, j'ai également des connaissances de base pour le développement Back-End.",
+	"about-info-3": "Je suis {iam} par ce que j'aime et {loved}. J'essaie de rendre mon travail aussi parfait que possible, donc je suis toujours en train de faire des recherches et d'apprendre à le faire de mieux en mieux",
+	"about-degree": "Ingénieur en Systèmes Informatiques",
+	"about-special": "développement Front-End",
+	"about-iam": "passionné",
+	"about-loved": "la programmation en React me fascine",
+	"about-habil": "Compétences",
+	"about-exp": "Expérience",
+	"about-apt": "Aptitudes",
+
+	"hab-1": "Travail d'équipe",
+	"hab-2": "Créatif",
+	"hab-3": "Anglais intermédiaire",
+	"hab-4": "Autonome",
+	"hab-5": "Proactif",
+
+	"job-info-time-1": "Mai 2023 - Aujourd'hui",
+	"job-info-title-1": "Développeur React Front End chez 2 Real People Solutions.",
+	"job-info-desc-1": "Développeur frontal principal dans des projets d'entreprise tels que Tangerine Metrics et EverCargo. Gestion de projet avec Bitbucket et Jira.",
+
+	"job-info-time-2": "Janvier 2022 - Décembre 2022",
+	"job-info-title-2": "Maintenance back-end chez D.E.S.S.",
+	"job-info-desc-2": "Soutien administratif en informatique ainsi que maintenance des programmes SISAE-Siboltra et Job Fair.",
+
+	"job-info-time-3": "Juin 2019 - septembre 2019",
+	"job-info-title-3": "Développeur Back End chez DC Mayorista S.A de C.V.",
+	"job-info-desc-3": "Membre du groupe en charge de la plateforme interne de l'entreprise ; principalement réalisée avec Javascript et Java backend."
 }
