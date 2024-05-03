@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import useConfig from '../hooks/useConfig'
 import { mergeClasses } from '../utils/mergeClasses'
 
-const AsideMenuItem = ({ Icon, color, page, title, itsSiri = false, itsControl = false, active = false, itemClass }) => {
+const AsideMenuItem = ({ Icon, color, page, title, itsSiri = false, itsControl = false, active = false, itemClass, needPing }) => {
   const { font } = useConfig()
 
   const defClasses = useMemo(() => `flex gap-x-5 rounded-lg px-2 py-1 transition-colors duration-300 ease-in-out relative z-50 ${active && 'text-white bg-acc-main shadow-md'}`, [active])
@@ -33,8 +33,9 @@ const AsideMenuItem = ({ Icon, color, page, title, itsSiri = false, itsControl =
   } else {
     return (
       <Link to={page} className={mergeClasses(defClasses, itemClass)}>
-        <span className={`h-7 w-7 ${color} rounded-md flex items-center justify-center shadow`}>
-          <Icon className='h-6 w-6 text-white' />
+        <span className={`h-7 w-7 ${color} rounded-md flex items-center justify-center shadow relative`}>
+          <Icon className='h-6 w-6 text-white z-50' />
+          {needPing && <span className='animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-acc-main opacity-50 z-10' />}
         </span>
         <label className={`cursor-pointer ${font ? 'font-normal' : 'font-bold'}`}>
           <FormattedMessage id={title} />
@@ -52,6 +53,7 @@ AsideMenuItem.propTypes = {
   itsSiri: PropTypes.bool,
   itsControl: PropTypes.bool,
   active: PropTypes.bool,
+  needPing: PropTypes.bool,
   itemClass: PropTypes.string
 }
 

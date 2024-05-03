@@ -37,7 +37,7 @@ const MainContainer = () => {
   }, [pathname])
 
   return (
-    <main className={`${theme} ${accent} min-h-screen max-h-screen flex flex-row bg-main-fondo bg-cover bg-center bg-no-repeat cursor-default overflow-hidden transition-all duration-300 ease-in-out`}>
+    <main className={`${theme} ${accent} min-h-screen max-h-screen h-full flex flex-row bg-main-fondo bg-cover bg-center bg-no-repeat cursor-default overflow-hidden transition-all duration-300 ease-in-out relative`}>
       <AsideMenu path={path} />
       <AsideMenuFloat setOpen={setActMenu} open={actMenu} path={path} />
       <AsideMenuMovil setOpen={setMovil} open={movil} path={path} />

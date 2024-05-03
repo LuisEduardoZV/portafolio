@@ -103,7 +103,8 @@ export default {
         loader: 'loader 1s infinite steps(12)',
         formingImages: 'formingImages 10s infinite normal forwards',
         formingImagesSecond: 'formingImages 10s infinite normal forwards 0.7s',
-        formingImagesAlter: 'formingImagesAlter 10s infinite normal'
+        formingImagesAlter: 'formingImagesAlter 10s infinite normal',
+        'ping-slow': 'ping 5s cubic-bezier(0, 0, 0.2, 1) infinite'
       },
       transitionProperty: {
         visible: 'visibility, opacity'
