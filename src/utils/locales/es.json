@@ -49,5 +49,9 @@
 	"wifi-password": "Contraseña",
 	"wifi-show": "Mostrar contraseña",
 	"wifi-cancel": "Cancelar",
-	"wifi-send": "Acceder"
+	"wifi-send": "Acceder",
+
+	"proj-info-1": "Antenna App es una herramienta diseñada para la gestión eficiente de clientes y antenas. Ofrece funcionalidades para la creación de usuarios, vinculación de antenas y generación de reportes de consumo de datos. Dirigida especialmente a empresas de alquiler de equipos, proporciona una solución integral para optimizar sus operaciones.",
+	"proj-info-2": "Servidor desarrollado para la lectura y escritura de datos del proyecto Antenna App. Cuenta con conexión a Base de Datos en PostgresSQL en Vercel ayudando a que permanezcan los datos.",
+	"proj-info-3": "Weather App muestra infomación climatológica en tu zona geografica o, si se desea, en cualquier parte del mundo que busque. Da información del día en curso así como de los siguientes 4 días mostrando datos relacionados a la temperatura, velocidad y dirección del viente, presión atmosferica y contaminación atmosférica."
 }
