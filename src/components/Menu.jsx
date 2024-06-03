@@ -11,9 +11,7 @@ const Menu = memo(({ path, menuItems, containerClasses }) => {
   return (
     <section className={mergeClasses('flex flex-col w-full h-screen gap-y-2 min-h-screen overflow-y-auto m-0 pl-5 pr-3 sm:pr-6 text-main-text flex-1', containerClasses)}>
       <Link to='' className='flex w-full h-fit gap-x-5 items-center mb-5'>
-        <div className='bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full lg:h-14 lg:w-14 relative'>
-          <span className='animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-acc-main opacity-50' />
-        </div>
+        <div className='bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full lg:h-14 lg:w-14 relative animate-wiggleIcon' />
         <div className='flex flex-col'>
           <label className='font-bold'>Luis E. Zúñiga V.</label>
           <span className='lg:text-sm text-main-text-low'>Front End Developer</span>

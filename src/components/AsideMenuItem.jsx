@@ -33,9 +33,8 @@ const AsideMenuItem = ({ Icon, color, page, title, itsSiri = false, itsControl =
   } else {
     return (
       <Link to={page} className={mergeClasses(defClasses, itemClass)}>
-        <span className={`h-7 w-7 ${color} rounded-md flex items-center justify-center shadow relative`}>
-          <Icon className='h-6 w-6 text-white z-50' />
-          {needPing && <span className='animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-acc-main opacity-50 z-10' />}
+        <span className={`h-7 w-7 ${color} rounded-md flex items-center justify-center shadow relative ${needPing && 'animate-wiggleIcon'}`}>
+          <Icon className='h-6 w-6 text-white z-50 ' />
         </span>
         <label className={`cursor-pointer ${font ? 'font-normal' : 'font-bold'}`}>
           <FormattedMessage id={title} />

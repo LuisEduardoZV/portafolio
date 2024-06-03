@@ -97,6 +97,29 @@ export default {
           '50%, 60%': {
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'
           }
+        },
+        wiggle: {
+          '0%, 7%': {
+            transform: 'rotateZ(0)'
+          },
+          '15%': {
+            transform: 'rotateZ(-15deg)'
+          },
+          '20%': {
+            transform: 'rotateZ(10deg)'
+          },
+          '25%': {
+            transform: 'rotateZ(-10deg)'
+          },
+          '30%': {
+            transform: 'rotateZ(6deg)'
+          },
+          '35%': {
+            transform: 'rotateZ(-4deg)'
+          },
+          '40%, 100%': {
+            transform: 'rotateZ(0)'
+          }
         }
       },
       animation: {
@@ -104,7 +127,8 @@ export default {
         formingImages: 'formingImages 10s infinite normal forwards',
         formingImagesSecond: 'formingImages 10s infinite normal forwards 0.7s',
         formingImagesAlter: 'formingImagesAlter 10s infinite normal',
-        'ping-slow': 'ping 5s cubic-bezier(0, 0, 0.2, 1) infinite'
+        'ping-slow': 'ping 5s cubic-bezier(0, 0, 0.2, 1) infinite',
+        wiggleIcon: 'wiggle 4s linear infinite'
       },
       transitionProperty: {
         visible: 'visibility, opacity'

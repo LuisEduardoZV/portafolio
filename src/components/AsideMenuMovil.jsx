@@ -19,9 +19,7 @@ export default function AsideMenuMovil ({ setOpen, open, path }) {
       <div className={mergeClasses('w-full relative p-5 ps-14 flex-col items-center justify-center h-full min-h-screen overflow-y-auto transition-colors duration-300 ease-in-out', `${bgblur ? 'bg-bg-100/80' : 'bg-bg-100/100'}`)}>
         <MainContentCard className='rounded-xl px-0 w-11/12 z-50'>
           <Link to='' className='flex w-full h-fit gap-x-5 items-center px-3 relative' onClick={() => setOpen(false)}>
-            <div className='bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full lg:h-14 lg:w-14 relative'>
-              <span className='animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-acc-main opacity-30' />
-            </div>
+            <div className='bg-profile h-16 w-16 bg-no-repeat bg-top bg-cover rounded-full lg:h-14 lg:w-14 relative animate-wiggleIcon' />
             <div className='flex flex-col'>
               <label className='font-bold'>Luis E. Zúñiga V.</label>
               <span className='lg:text-sm'>Front End Developer</span>
@@ -34,9 +32,8 @@ export default function AsideMenuMovil ({ setOpen, open, path }) {
             return (
               <Fragment key={index}>
                 <Link to={data.page} className='flex w-full gap-x-5 rounded-lg px-7 py-1 transition-colors duration-300 ease-in-out relative z-50' onClick={() => setOpen(false)}>
-                  <span className={`h-7 w-7 ${data.color} rounded-md flex items-center justify-center shadow relative`}>
+                  <span className={`h-7 w-7 ${data.color} rounded-md flex items-center justify-center shadow relative animate-wiggleIcon`}>
                     <Icon className='h-6 w-6 text-white' />
-                    <span className='animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-acc-main opacity-50' />
                   </span>
                   <label className='cursor-pointer'>
                     <FormattedMessage id={data.title} />
@@ -55,9 +52,8 @@ export default function AsideMenuMovil ({ setOpen, open, path }) {
             return (
               <Fragment key={index}>
                 <Link to={data.page} className='flex w-full gap-x-5 rounded-lg px-7 py-1 transition-colors duration-300 ease-in-out relative z-50' onClick={() => setOpen(false)}>
-                  <span className={`h-7 w-7 ${data.color} rounded-md flex items-center justify-center shadow relative`}>
+                  <span className={`h-7 w-7 ${data.color} rounded-md flex items-center justify-center shadow relative ${index !== 2 && 'animate-wiggleIcon'}`}>
                     <Icon className='h-6 w-6 text-white' />
-                    {index !== 2 && <span className='animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-acc-main opacity-50' />}
                   </span>
                   <label className='cursor-pointer'>
                     <FormattedMessage id={data.title} />
